@@ -555,6 +555,67 @@ background: #000000;
 	height: 480px;
 	overflow: hidden;
 }
+/* Readme windows*/
+#window_readme_souvenir_1{
+	position: absolute;
+	top: 75px;
+	left: 75px;
+	min-width: 320px;
+	min-height: 200px;
+	width: 640px;
+	height: 480px;
+	overflow: hidden;
+}
+#window_readme_souvenir_2{
+	position: absolute;
+	top: 75px;
+	left: 75px;
+	min-width: 320px;
+	min-height: 200px;
+	width: 640px;
+	height: 480px;
+	overflow: hidden;
+}
+#window_readme_souvenir_3{
+	position: absolute;
+	top: 75px;
+	left: 75px;
+	min-width: 320px;
+	min-height: 200px;
+	width: 640px;
+	height: 480px;
+	overflow: hidden;
+}
+#window_readme_souvenir_4{
+	position: absolute;
+	top: 75px;
+	left: 75px;
+	min-width: 320px;
+	min-height: 200px;
+	width: 640px;
+	height: 480px;
+	overflow: hidden;
+}
+#window_readme_souvenir_5{
+	position: absolute;
+	top: 75px;
+	left: 75px;
+	min-width: 320px;
+	min-height: 200px;
+	width: 640px;
+	height: 480px;
+	overflow: hidden;
+}
+#window_readme_souvenir_6{
+	position: absolute;
+	top: 75px;
+	left: 75px;
+	min-width: 320px;
+	min-height: 200px;
+	width: 640px;
+	height: 480px;
+	overflow: hidden;
+}
 /* Responsive design hides taskbar search box (like windows 10 does) */
 /* when screen width is 800px or lower */
 /*
