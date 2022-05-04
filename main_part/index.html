@@ -26,6 +26,7 @@ For the Windows 10 CSS3 project
 <script src="js/filesaver.min.js"></script>
 <link href="css/normalize.css" rel="stylesheet">
 <link href="styles.css" rel="stylesheet">
+<link href="folder_window.css" rel="stylesheet">
 <link href="awesome/css/font-awesome.min.css" rel="stylesheet">
 <!--[if lte IE 8]>
 <script src="js/html5shiv.min.js" type="text/javascript"></script>
@@ -124,7 +125,7 @@ CSS3 Recreation &copy; 2016 <a class="winlink" href="/">win10css.appspot.com</a>
 				  <a class="window__minimize" href="#"><i class="fa fa-minus"></i></a>
 			  <a class="window__maximize" href="#"><i class="fa"></i></a>
 			  -->
-			  <div class="closeBtn" id="npClose_2">&times;</div>
+			  <div class="closeBtn" id="btnClose_folderwindow">&times;</div>
 			</div>
 		  </div>
 	</div>
@@ -211,29 +212,30 @@ CSS3 Recreation &copy; 2016 <a class="winlink" href="/">win10css.appspot.com</a>
 	  </div>
 	  <div class="window__main">
 		<div class="folders">
-		  <a href="#">
+		  <a href="#" id="souvenir_1">
 			<i class="fa fa-folder"></i>
-			<span>Folder 1</span>
+			<span>Souvenir 1</span>
 		  </a>
-		  <a href="#">
+		  <a href="#" id="souvenir_2">
 			<i class="fa fa-folder"></i>
-			<span>Folder 2</span>
+			<span>Souvenir 2</span>
 		  </a>
-		  <a href="#">
+		  <a href="#" id="souvenir_3">
 			<i class="fa fa-folder"></i>
-			<span>Folder 3</span>
+			<span>Souvenir 3</span>
 		  </a>
-		  <a href="#">
-			<i class="fa fa-file"></i>
-			<span>File</span>
+		  <a href="#" id="souvenir_4">
+			<i class="fa fa-folder"></i>
+			<span>Souvenir 4</span>
 		  </a>
-		  <a href="#">
-			<i class="fa fa-file"></i>
-			<span>File</span>
+		  <a href="#" id="souvenir_5">
+			<i class="fa fa-folder"></i>
+			<span>Souvenir 5</span>
 		  </a>
-		  <a href="#">
-			<i class="fa fa-file"></i>
-			<span>File</span>
+		  <a href="#" id="souvenir_6">
+			<i class="fa fa-folder"></i>
+			<span>Souvenir 6</span>
+			<!-- Hide untill user checked all-->
 		  </a>
 		  <a href="#">
 			<i class="fa fa-file"></i>
@@ -264,6 +266,767 @@ CSS3 Recreation &copy; 2016 <a class="winlink" href="/">win10css.appspot.com</a>
 	</div>
   </div>
   <!---->
+<div class="window" id="window_souvenir_1">
+	<div class="titleFrame" >
+		<div class="window__titlebar">
+			<div class="window__controls window__controls--left">
+			  <a class="window__icon" href="#"><i class="fa fa-folder"></i></a>
+			  <a class="window__dossier" href="#"><i class="fa fa-desktop"></i></a>
+			 <!-- 
+			  <a class="window__close1" href="#"><i class="fa fa-close"></i></a>
+			  <a class="window--menutoggle" href="#"><i class="fa fa-plus"></i></a>
+			 -->
+			</div>
+			<!--
+				<span class="window__title">
+			  Explorateur
+			</span>
+			-->
+			
+			<div class="window__controls window__controls--right">
+			  <!--
+				  <a class="window__minimize" href="#"><i class="fa fa-minus"></i></a>
+			  <a class="window__maximize" href="#"><i class="fa"></i></a>
+			  -->
+			  <div class="closeBtn" id="btnCloseSouvenir_1">&times;</div>
+			</div>
+		  </div>
+	</div>
+	
+	<ul class="window__menu">
+		<!--
+			<li>
+		  <a href="#">
+			<i class="menu__icon fa fa-search"></i>
+			Search
+		  </a>
+		</li>
+		-->
+		<li>
+		  <a href="#">
+			<i class="menu__icon fa fa-share-alt"></i>
+			Share
+		  </a>
+		</li>
+		<li>
+		  <a href="#">
+			<i class="menu__icon fa fa-plug"></i>
+			Devices
+		  </a>
+		</li>
+		<li class="divided">
+		  <a href="#">
+			<i class="menu__icon fa fa-cog"></i>
+			Settings
+		  </a>
+		</li>
+	  </ul>
+	
+	<div class="window__actions">
+	  <a class="window__back" href="#" id="btnBackSouvenir_1">
+		<i class="fa fa-arrow-left"></i>
+	  </a>
+	  <a class="window__forward" href="#">
+		<i class="fa fa-arrow-right"></i>
+	  </a>
+	  <!--<div class="window__path">
+		<a href="#">
+		<i class="fa fa-desktop"></i>
+		  Bureau
+		</a>
+	  </div>-->
+	  <!--
+		  <form class="search">
+		<input type="text" class="search__input" placeholder="Search">
+		<button class="search__btn">
+		</button>
+	  </form>
+	  -->
+	</div>
+	
+	<div class="window__body">
+	  
+	  <div class="window__side">
+		
+		<ul class="side__list">
+		  <li><a href="#">Home</a></li>
+		  <li>
+			<a href="#">Favorites</a>
+			<ul>
+			  <li><a href="#">Desktop</a></li>
+			  <li><a href="#">Downloads</a></li>
+			  <li><a href="#">Recent Places</a></li>
+		  </ul>
+		</li>
+		  <li>
+			<a href="#">This Device</a>
+			<ul style="display:none">
+			  <li><a href="#">Desktop</a>
+				<ul style="display:none">
+				  <li>
+					<a href="#">Folder 1</a>
+				  </li>
+				</ul>
+			  </li>
+			  <li><a href="#">Documents</a></li>
+			  <li><a href="#">Downloads</a></li>
+			  <li><a href="#">Local Disk  (C:)</a></li>
+		</ul>
+	  </div>
+	  <div class="window__main">
+		<div class="folders">
+			<a href="#">
+				<i class="fa fa-file-image-o" aria-hidden="true"></i>
+				<span>img1.png</span>
+				<!-- Hide untill user checked all-->
+			  </a>
+		  <a href="#">
+			<i class="fa fa-file"></i>
+			<span>readme.md</span>
+		  </a>
+		  <a href="#">
+			<i class="fa fa-file"></i>
+			<span>code</span>
+		  </a>
+		</div>
+	  </div>
+	</div>
+</div>
+  <!---->
+  <div class="window" id="window_souvenir_2">
+	<div class="titleFrame" >
+		<div class="window__titlebar">
+			<div class="window__controls window__controls--left">
+			  <a class="window__icon" href="#"><i class="fa fa-folder"></i></a>
+			  <a class="window__dossier" href="#"><i class="fa fa-desktop"></i></a>
+			 <!-- 
+			  <a class="window__close1" href="#"><i class="fa fa-close"></i></a>
+			  <a class="window--menutoggle" href="#"><i class="fa fa-plus"></i></a>
+			 -->
+			</div>
+			<!--
+				<span class="window__title">
+			  Explorateur
+			</span>
+			-->
+			
+			<div class="window__controls window__controls--right">
+			  <!--
+				  <a class="window__minimize" href="#"><i class="fa fa-minus"></i></a>
+			  <a class="window__maximize" href="#"><i class="fa"></i></a>
+			  -->
+			  <div class="closeBtn" id="btnCloseSouvenir_2">&times;</div>
+			</div>
+		  </div>
+	</div>
+	
+	<ul class="window__menu">
+		<!--
+			<li>
+		  <a href="#">
+			<i class="menu__icon fa fa-search"></i>
+			Search
+		  </a>
+		</li>
+		-->
+		<li>
+		  <a href="#">
+			<i class="menu__icon fa fa-share-alt"></i>
+			Share
+		  </a>
+		</li>
+		<li>
+		  <a href="#">
+			<i class="menu__icon fa fa-plug"></i>
+			Devices
+		  </a>
+		</li>
+		<li class="divided">
+		  <a href="#">
+			<i class="menu__icon fa fa-cog"></i>
+			Settings
+		  </a>
+		</li>
+	  </ul>
+	
+	<div class="window__actions">
+	  <a class="window__back" href="#" id="btnBackSouvenir_2">
+		<i class="fa fa-arrow-left"></i>
+	  </a>
+	  <a class="window__forward" href="#">
+		<i class="fa fa-arrow-right"></i>
+	  </a>
+	  <!--<div class="window__path">
+		<a href="#">
+		<i class="fa fa-desktop"></i>
+		  Bureau
+		</a>
+	  </div>-->
+	  <!--
+		  <form class="search">
+		<input type="text" class="search__input" placeholder="Search">
+		<button class="search__btn">
+		</button>
+	  </form>
+	  -->
+	</div>
+	
+	<div class="window__body">
+	  
+	  <div class="window__side">
+		
+		<ul class="side__list">
+		  <li><a href="#">Home</a></li>
+		  <li>
+			<a href="#">Favorites</a>
+			<ul>
+			  <li><a href="#">Desktop</a></li>
+			  <li><a href="#">Downloads</a></li>
+			  <li><a href="#">Recent Places</a></li>
+		  </ul>
+		</li>
+		  <li>
+			<a href="#">This Device</a>
+			<ul style="display:none">
+			  <li><a href="#">Desktop</a>
+				<ul style="display:none">
+				  <li>
+					<a href="#">Folder 1</a>
+				  </li>
+				</ul>
+			  </li>
+			  <li><a href="#">Documents</a></li>
+			  <li><a href="#">Downloads</a></li>
+			  <li><a href="#">Local Disk  (C:)</a></li>
+		</ul>
+	  </div>
+	  <div class="window__main">
+		<div class="folders">
+			<a href="#">
+				<i class="fa fa-file-image-o" aria-hidden="true"></i>
+				<span>img2.png</span>
+				<!-- Hide untill user checked all-->
+			  </a>
+		  <a href="#">
+			<i class="fa fa-file"></i>
+			<span>readme.md</span>
+		  </a>
+		  <a href="#">
+			<i class="fa fa-file"></i>
+			<span>code</span>
+		  </a>
+		</div>
+	  </div>
+	</div>
+</div>
+  <!---->
+  <div class="window" id="window_souvenir_3">
+	<div class="titleFrame" >
+		<div class="window__titlebar">
+			<div class="window__controls window__controls--left">
+			  <a class="window__icon" href="#"><i class="fa fa-folder"></i></a>
+			  <a class="window__dossier" href="#"><i class="fa fa-desktop"></i></a>
+			 <!-- 
+			  <a class="window__close1" href="#"><i class="fa fa-close"></i></a>
+			  <a class="window--menutoggle" href="#"><i class="fa fa-plus"></i></a>
+			 -->
+			</div>
+			<!--
+				<span class="window__title">
+			  Explorateur
+			</span>
+			-->
+			
+			<div class="window__controls window__controls--right">
+			  <!--
+				  <a class="window__minimize" href="#"><i class="fa fa-minus"></i></a>
+			  <a class="window__maximize" href="#"><i class="fa"></i></a>
+			  -->
+			  <div class="closeBtn" id="btnCloseSouvenir_3">&times;</div>
+			</div>
+		  </div>
+	</div>
+	
+	<ul class="window__menu">
+		<!--
+			<li>
+		  <a href="#">
+			<i class="menu__icon fa fa-search"></i>
+			Search
+		  </a>
+		</li>
+		-->
+		<li>
+		  <a href="#">
+			<i class="menu__icon fa fa-share-alt"></i>
+			Share
+		  </a>
+		</li>
+		<li>
+		  <a href="#">
+			<i class="menu__icon fa fa-plug"></i>
+			Devices
+		  </a>
+		</li>
+		<li class="divided">
+		  <a href="#">
+			<i class="menu__icon fa fa-cog"></i>
+			Settings
+		  </a>
+		</li>
+	  </ul>
+	
+	<div class="window__actions">
+	  <a class="window__back" href="#" id="btnBackSouvenir_3">
+		<i class="fa fa-arrow-left"></i>
+	  </a>
+	  <a class="window__forward" href="#">
+		<i class="fa fa-arrow-right"></i>
+	  </a>
+	  <!--<div class="window__path">
+		<a href="#">
+		<i class="fa fa-desktop"></i>
+		  Bureau
+		</a>
+	  </div>-->
+	  <!--
+		  <form class="search">
+		<input type="text" class="search__input" placeholder="Search">
+		<button class="search__btn">
+		</button>
+	  </form>
+	  -->
+	</div>
+	
+	<div class="window__body">
+	  
+	  <div class="window__side">
+		
+		<ul class="side__list">
+		  <li><a href="#">Home</a></li>
+		  <li>
+			<a href="#">Favorites</a>
+			<ul>
+			  <li><a href="#">Desktop</a></li>
+			  <li><a href="#">Downloads</a></li>
+			  <li><a href="#">Recent Places</a></li>
+		  </ul>
+		</li>
+		  <li>
+			<a href="#">This Device</a>
+			<ul style="display:none">
+			  <li><a href="#">Desktop</a>
+				<ul style="display:none">
+				  <li>
+					<a href="#">Folder 1</a>
+				  </li>
+				</ul>
+			  </li>
+			  <li><a href="#">Documents</a></li>
+			  <li><a href="#">Downloads</a></li>
+			  <li><a href="#">Local Disk  (C:)</a></li>
+		</ul>
+	  </div>
+	  <div class="window__main">
+		<div class="folders">
+			<a href="#">
+				<i class="fa fa-file-image-o" aria-hidden="true"></i>
+				<span>img3.png</span>
+				<!-- Hide untill user checked all-->
+			  </a>
+		  <a href="#">
+			<i class="fa fa-file"></i>
+			<span>readme.md</span>
+		  </a>
+		  <a href="#">
+			<i class="fa fa-file"></i>
+			<span>code</span>
+		  </a>
+		</div>
+	  </div>
+	</div>
+</div>
+  <!---->
+  <div class="window" id="window_souvenir_4">
+	<div class="titleFrame" >
+		<div class="window__titlebar">
+			<div class="window__controls window__controls--left">
+			  <a class="window__icon" href="#"><i class="fa fa-folder"></i></a>
+			  <a class="window__dossier" href="#"><i class="fa fa-desktop"></i></a>
+			 <!-- 
+			  <a class="window__close1" href="#"><i class="fa fa-close"></i></a>
+			  <a class="window--menutoggle" href="#"><i class="fa fa-plus"></i></a>
+			 -->
+			</div>
+			<!--
+				<span class="window__title">
+			  Explorateur
+			</span>
+			-->
+			
+			<div class="window__controls window__controls--right">
+			  <!--
+				  <a class="window__minimize" href="#"><i class="fa fa-minus"></i></a>
+			  <a class="window__maximize" href="#"><i class="fa"></i></a>
+			  -->
+			  <div class="closeBtn" id="btnCloseSouvenir_4">&times;</div>
+			</div>
+		  </div>
+	</div>
+	
+	<ul class="window__menu">
+		<!--
+			<li>
+		  <a href="#">
+			<i class="menu__icon fa fa-search"></i>
+			Search
+		  </a>
+		</li>
+		-->
+		<li>
+		  <a href="#">
+			<i class="menu__icon fa fa-share-alt"></i>
+			Share
+		  </a>
+		</li>
+		<li>
+		  <a href="#">
+			<i class="menu__icon fa fa-plug"></i>
+			Devices
+		  </a>
+		</li>
+		<li class="divided">
+		  <a href="#">
+			<i class="menu__icon fa fa-cog"></i>
+			Settings
+		  </a>
+		</li>
+	  </ul>
+	
+	<div class="window__actions">
+	  <a class="window__back" href="#" id="btnBackSouvenir_4">
+		<i class="fa fa-arrow-left"></i>
+	  </a>
+	  <a class="window__forward" href="#">
+		<i class="fa fa-arrow-right"></i>
+	  </a>
+	  <!--<div class="window__path">
+		<a href="#">
+		<i class="fa fa-desktop"></i>
+		  Bureau
+		</a>
+	  </div>-->
+	  <!--
+		  <form class="search">
+		<input type="text" class="search__input" placeholder="Search">
+		<button class="search__btn">
+		</button>
+	  </form>
+	  -->
+	</div>
+	
+	<div class="window__body">
+	  
+	  <div class="window__side">
+		
+		<ul class="side__list">
+		  <li><a href="#">Home</a></li>
+		  <li>
+			<a href="#">Favorites</a>
+			<ul>
+			  <li><a href="#">Desktop</a></li>
+			  <li><a href="#">Downloads</a></li>
+			  <li><a href="#">Recent Places</a></li>
+		  </ul>
+		</li>
+		  <li>
+			<a href="#">This Device</a>
+			<ul style="display:none">
+			  <li><a href="#">Desktop</a>
+				<ul style="display:none">
+				  <li>
+					<a href="#">Folder 1</a>
+				  </li>
+				</ul>
+			  </li>
+			  <li><a href="#">Documents</a></li>
+			  <li><a href="#">Downloads</a></li>
+			  <li><a href="#">Local Disk  (C:)</a></li>
+		</ul>
+	  </div>
+	  <div class="window__main">
+		<div class="folders">
+			<a href="#">
+				<i class="fa fa-file-image-o" aria-hidden="true"></i>
+				<span>img4.png</span>
+				<!-- Hide untill user checked all-->
+			  </a>
+		  <a href="#">
+			<i class="fa fa-file"></i>
+			<span>readme.md</span>
+		  </a>
+		  <a href="#">
+			<i class="fa fa-file"></i>
+			<span>code</span>
+		  </a>
+		</div>
+	  </div>
+	</div>
+</div>
+  <!---->
+  <div class="window" id="window_souvenir_5">
+	<div class="titleFrame" >
+		<div class="window__titlebar">
+			<div class="window__controls window__controls--left">
+			  <a class="window__icon" href="#"><i class="fa fa-folder"></i></a>
+			  <a class="window__dossier" href="#"><i class="fa fa-desktop"></i></a>
+			 <!-- 
+			  <a class="window__close1" href="#"><i class="fa fa-close"></i></a>
+			  <a class="window--menutoggle" href="#"><i class="fa fa-plus"></i></a>
+			 -->
+			</div>
+			<!--
+				<span class="window__title">
+			  Explorateur
+			</span>
+			-->
+			
+			<div class="window__controls window__controls--right">
+			  <!--
+				  <a class="window__minimize" href="#"><i class="fa fa-minus"></i></a>
+			  <a class="window__maximize" href="#"><i class="fa"></i></a>
+			  -->
+			  <div class="closeBtn" id="btnCloseSouvenir_5">&times;</div>
+			</div>
+		  </div>
+	</div>
+	
+	<ul class="window__menu">
+		<!--
+			<li>
+		  <a href="#">
+			<i class="menu__icon fa fa-search"></i>
+			Search
+		  </a>
+		</li>
+		-->
+		<li>
+		  <a href="#">
+			<i class="menu__icon fa fa-share-alt"></i>
+			Share
+		  </a>
+		</li>
+		<li>
+		  <a href="#">
+			<i class="menu__icon fa fa-plug"></i>
+			Devices
+		  </a>
+		</li>
+		<li class="divided">
+		  <a href="#">
+			<i class="menu__icon fa fa-cog"></i>
+			Settings
+		  </a>
+		</li>
+	  </ul>
+	
+	<div class="window__actions">
+	  <a class="window__back" href="#" id="btnBackSouvenir_5">
+		<i class="fa fa-arrow-left"></i>
+	  </a>
+	  <a class="window__forward" href="#">
+		<i class="fa fa-arrow-right"></i>
+	  </a>
+	  <!--<div class="window__path">
+		<a href="#">
+		<i class="fa fa-desktop"></i>
+		  Bureau
+		</a>
+	  </div>-->
+	  <!--
+		  <form class="search">
+		<input type="text" class="search__input" placeholder="Search">
+		<button class="search__btn">
+		</button>
+	  </form>
+	  -->
+	</div>
+	
+	<div class="window__body">
+	  
+	  <div class="window__side">
+		
+		<ul class="side__list">
+		  <li><a href="#">Home</a></li>
+		  <li>
+			<a href="#">Favorites</a>
+			<ul>
+			  <li><a href="#">Desktop</a></li>
+			  <li><a href="#">Downloads</a></li>
+			  <li><a href="#">Recent Places</a></li>
+		  </ul>
+		</li>
+		  <li>
+			<a href="#">This Device</a>
+			<ul style="display:none">
+			  <li><a href="#">Desktop</a>
+				<ul style="display:none">
+				  <li>
+					<a href="#">Folder 1</a>
+				  </li>
+				</ul>
+			  </li>
+			  <li><a href="#">Documents</a></li>
+			  <li><a href="#">Downloads</a></li>
+			  <li><a href="#">Local Disk  (C:)</a></li>
+		</ul>
+	  </div>
+	  <div class="window__main">
+		<div class="folders">
+			<a href="#">
+				<i class="fa fa-file-image-o" aria-hidden="true"></i>
+				<span>img5.png</span>
+				<!-- Hide untill user checked all-->
+			  </a>
+		  <a href="#">
+			<i class="fa fa-file"></i>
+			<span>readme.md</span>
+		  </a>
+		  <a href="#">
+			<i class="fa fa-file"></i>
+			<span>code</span>
+		  </a>
+		</div>
+	  </div>
+	</div>
+</div>
+  <!---->
+  <div class="window" id="window_souvenir_6">
+	<div class="titleFrame" >
+		<div class="window__titlebar">
+			<div class="window__controls window__controls--left">
+			  <a class="window__icon" href="#"><i class="fa fa-folder"></i></a>
+			  <a class="window__dossier" href="#"><i class="fa fa-desktop"></i></a>
+			 <!-- 
+			  <a class="window__close1" href="#"><i class="fa fa-close"></i></a>
+			  <a class="window--menutoggle" href="#"><i class="fa fa-plus"></i></a>
+			 -->
+			</div>
+			<!--
+				<span class="window__title">
+			  Explorateur
+			</span>
+			-->
+			
+			<div class="window__controls window__controls--right">
+			  <!--
+				  <a class="window__minimize" href="#"><i class="fa fa-minus"></i></a>
+			  <a class="window__maximize" href="#"><i class="fa"></i></a>
+			  -->
+			  <div class="closeBtn" id="btnCloseSouvenir_6">&times;</div>
+			</div>
+		  </div>
+	</div>
+	
+	<ul class="window__menu">
+		<!--
+			<li>
+		  <a href="#">
+			<i class="menu__icon fa fa-search"></i>
+			Search
+		  </a>
+		</li>
+		-->
+		<li>
+		  <a href="#">
+			<i class="menu__icon fa fa-share-alt"></i>
+			Share
+		  </a>
+		</li>
+		<li>
+		  <a href="#">
+			<i class="menu__icon fa fa-plug"></i>
+			Devices
+		  </a>
+		</li>
+		<li class="divided">
+		  <a href="#">
+			<i class="menu__icon fa fa-cog"></i>
+			Settings
+		  </a>
+		</li>
+	  </ul>
+	
+	<div class="window__actions">
+	  <a class="window__back" href="#" id="btnBackSouvenir_6">
+		<i class="fa fa-arrow-left"></i>
+	  </a>
+	  <a class="window__forward" href="#">
+		<i class="fa fa-arrow-right"></i>
+	  </a>
+	  <!--<div class="window__path">
+		<a href="#">
+		<i class="fa fa-desktop"></i>
+		  Bureau
+		</a>
+	  </div>-->
+	  <!--
+		  <form class="search">
+		<input type="text" class="search__input" placeholder="Search">
+		<button class="search__btn">
+		</button>
+	  </form>
+	  -->
+	</div>
+	
+	<div class="window__body">
+	  
+	  <div class="window__side">
+		
+		<ul class="side__list">
+		  <li><a href="#">Home</a></li>
+		  <li>
+			<a href="#">Favorites</a>
+			<ul>
+			  <li><a href="#">Desktop</a></li>
+			  <li><a href="#">Downloads</a></li>
+			  <li><a href="#">Recent Places</a></li>
+		  </ul>
+		</li>
+		  <li>
+			<a href="#">This Device</a>
+			<ul style="display:none">
+			  <li><a href="#">Desktop</a>
+				<ul style="display:none">
+				  <li>
+					<a href="#">Folder 1</a>
+				  </li>
+				</ul>
+			  </li>
+			  <li><a href="#">Documents</a></li>
+			  <li><a href="#">Downloads</a></li>
+			  <li><a href="#">Local Disk  (C:)</a></li>
+		</ul>
+	  </div>
+	  <div class="window__main">
+		<div class="folders">
+			<a href="#">
+				<i class="fa fa-file-image-o" aria-hidden="true"></i>
+				<span>img6.png</span>
+				<!-- Hide untill user checked all-->
+			  </a>
+		  <a href="#">
+			<i class="fa fa-file"></i>
+			<span>readme.md</span>
+		  </a>
+		  <a href="#">
+			<i class="fa fa-file"></i>
+			<span>code</span>
+		  </a>
+		</div>
+	  </div>
+	</div>
+</div>
 <div class="window" id="folderexplorer">
 	<div class="titleFrame" >
 	<div class="titleContent">

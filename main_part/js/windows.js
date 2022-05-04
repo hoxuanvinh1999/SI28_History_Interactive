@@ -4,6 +4,19 @@
 //
 // Checking if device is a mobile phone and alerting the user if that is the case
 // If not, checks that screen is wide enough
+
+//At the beginning these windows is closed
+$("#window_souvenir_1").hide()
+$("#window_souvenir_2").hide()
+$("#window_souvenir_3").hide()
+$("#window_souvenir_4").hide()
+$("#window_souvenir_5").hide()
+$("#window_souvenir_6").hide()
+$("#souvenir_6").hide()
+var check_opened_folder = [0,0,0,0,0]
+$("#folderexplorer").hide()
+$("#notepad").hide()
+
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
  console.log("Please access this page using a computer for the best experience.");
 // Hides these windows so it doesn't crowd the viewport
@@ -255,7 +268,77 @@ $(document).ready(function() {
 		$("#folderexplorer").fadeOut(300);
 	});
 	// folderwindow
-	$("#npClose_2").click(function() {
+	$("#btnClose_folderwindow").click(function() {
 		$("#folderwindow").fadeOut(300);
+	});
+	// Souvenir 1
+	$("#souvenir_1").click(function() {
+		check_opened_folder[0] += 1;
+		$("#window_souvenir_1").toggle(300); // adc is just a clone
+		$("#folderwindow").fadeOut(300);
+	});
+	$("#btnBackSouvenir_1").click(function() {
+		check_open_folder6();
+		$("#window_souvenir_1").fadeOut(300); // adc is just a clone
+		$("#folderwindow").toggle(300); 
+	});
+	$("#souvenir_2").click(function() {
+		check_opened_folder[1] += 1;
+		$("#window_souvenir_2").toggle(300); // adc is just a clone
+		$("#folderwindow").fadeOut(300);
+	});
+	$("#btnBackSouvenir_2").click(function() {
+		check_open_folder6();
+		$("#window_souvenir_2").fadeOut(300); // adc is just a clone
+		$("#folderwindow").toggle(300); 
+	});
+	$("#souvenir_3").click(function() {
+		check_opened_folder[2] += 1;
+		$("#window_souvenir_3").toggle(300); // adc is just a clone
+		$("#folderwindow").fadeOut(300);
+	});
+	$("#btnBackSouvenir_3").click(function() {
+		check_open_folder6();
+		$("#window_souvenir_3").fadeOut(300); // adc is just a clone
+		$("#folderwindow").toggle(300); 
+	});
+	$("#souvenir_4").click(function() {
+		check_opened_folder[3] += 1;
+		$("#window_souvenir_4").toggle(300); // adc is just a clone
+		$("#folderwindow").fadeOut(300);
+	});
+	$("#btnBackSouvenir_4").click(function() {
+		check_open_folder6();
+		$("#window_souvenir_4").fadeOut(300); // adc is just a clone
+		$("#folderwindow").toggle(300); 
+	});
+	$("#souvenir_5").click(function() {
+		check_opened_folder[4] += 1;
+		$("#window_souvenir_5").toggle(300); // adc is just a clone
+		$("#folderwindow").fadeOut(300);
+	});
+	$("#btnBackSouvenir_5").click(function() {
+		check_open_folder6();
+		$("#window_souvenir_5").fadeOut(300); // adc is just a clone
+		$("#folderwindow").toggle(300); 
+	});
+	function check_open_folder6(){
+		let k = 0;
+		for (let step = 0; step < 5; step++) {
+			if (check_opened_folder[step] >= 1){
+				k += 1
+			}
+		  }
+		if (k >= 5){
+			$("#souvenir_6").show()
+		}
+	}
+	$("#souvenir_6").click(function() {
+		$("#window_souvenir_6").toggle(300); // adc is just a clone
+		$("#folderwindow").fadeOut(300);
+	});
+	$("#btnBackSouvenir_6").click(function() {
+		$("#window_souvenir_6").fadeOut(300); // adc is just a clone
+		$("#folderwindow").toggle(300); 
 	});
 });
