@@ -207,6 +207,7 @@ $(document).ready(function() {
 	});
 
 	$("#folderIconFrame").click(function() {
+		check_open_folder6();
 		$("#folderwindow").toggle(300);
 	});
 	$("#npClose_1").click(function() {
@@ -282,6 +283,9 @@ $(document).ready(function() {
 		$("#window_souvenir_1").toggle(300); // adc is just a clone
 		$("#folderwindow").fadeOut(300);
 	});
+	$("#btnCloseSouvenir_1").click(function() {
+		$("#window_souvenir_1").fadeOut(300); // adc is just a clone
+	});
 	$("#btnBackSouvenir_1").click(function() {
 		check_open_folder6();
 		$("#window_souvenir_1").fadeOut(300); // adc is just a clone
@@ -291,6 +295,9 @@ $(document).ready(function() {
 		check_opened_folder[1] += 1;
 		$("#window_souvenir_2").toggle(300); // adc is just a clone
 		$("#folderwindow").fadeOut(300);
+	});
+	$("#btnCloseSouvenir_2").click(function() {
+		$("#window_souvenir_2").fadeOut(300); // adc is just a clone
 	});
 	$("#btnBackSouvenir_2").click(function() {
 		check_open_folder6();
@@ -302,6 +309,9 @@ $(document).ready(function() {
 		$("#window_souvenir_3").toggle(300); // adc is just a clone
 		$("#folderwindow").fadeOut(300);
 	});
+	$("#btnCloseSouvenir_3").click(function() {
+		$("#window_souvenir_3").fadeOut(300); // adc is just a clone
+	});
 	$("#btnBackSouvenir_3").click(function() {
 		check_open_folder6();
 		$("#window_souvenir_3").fadeOut(300); // adc is just a clone
@@ -312,6 +322,9 @@ $(document).ready(function() {
 		$("#window_souvenir_4").toggle(300); // adc is just a clone
 		$("#folderwindow").fadeOut(300);
 	});
+	$("#btnCloseSouvenir_4").click(function() {
+		$("#window_souvenir_4").fadeOut(300); // adc is just a clone
+	});
 	$("#btnBackSouvenir_4").click(function() {
 		check_open_folder6();
 		$("#window_souvenir_4").fadeOut(300); // adc is just a clone
@@ -321,6 +334,9 @@ $(document).ready(function() {
 		check_opened_folder[4] += 1;
 		$("#window_souvenir_5").toggle(300); // adc is just a clone
 		$("#folderwindow").fadeOut(300);
+	});
+	$("#btnCloseSouvenir_5").click(function() {
+		$("#window_souvenir_5").fadeOut(300); // adc is just a clone
 	});
 	$("#btnBackSouvenir_5").click(function() {
 		check_open_folder6();
@@ -341,6 +357,9 @@ $(document).ready(function() {
 	$("#souvenir_6").click(function() {
 		$("#window_souvenir_6").toggle(300); // adc is just a clone
 		$("#folderwindow").fadeOut(300);
+	});
+	$("#btnCloseSouvenir_6").click(function() {
+		$("#window_souvenir_6").fadeOut(300); // adc is just a clone
 	});
 	$("#btnBackSouvenir_6").click(function() {
 		$("#window_souvenir_6").fadeOut(300); // adc is just a clone
