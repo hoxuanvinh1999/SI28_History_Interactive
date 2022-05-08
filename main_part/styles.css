@@ -855,14 +855,16 @@ div.taskbar {
 	margin: auto;
 	max-width: 80%;
 	max-height: 90%
-  }
-  .fit-img-bottom {
+}
+
+.fit-img-bottom {
 	top: auto;
-  }
-  .fit-img-tight {
+}
+
+.fit-img-tight {
 	max-width: 100%;
 	max-height: 100%
-  }
+}
 
 
 #window_photo1_souvenir_1 {
@@ -875,6 +877,7 @@ div.taskbar {
 	height: 480px;
 	overflow: hidden;
 }
+
 #window_photo1_souvenir_2 {
 	position: absolute;
 	top: 75px;
@@ -885,6 +888,7 @@ div.taskbar {
 	height: 480px;
 	overflow: hidden;
 }
+
 #window_photo1_souvenir_3 {
 	position: absolute;
 	top: 75px;
@@ -895,6 +899,7 @@ div.taskbar {
 	height: 480px;
 	overflow: hidden;
 }
+
 #window_photo1_souvenir_4 {
 	position: absolute;
 	top: 75px;
@@ -905,6 +910,7 @@ div.taskbar {
 	height: 480px;
 	overflow: hidden;
 }
+
 #window_photo1_souvenir_5 {
 	position: absolute;
 	top: 75px;
@@ -915,6 +921,7 @@ div.taskbar {
 	height: 480px;
 	overflow: hidden;
 }
+
 #window_photo1_souvenir_6 {
 	position: absolute;
 	top: 75px;
