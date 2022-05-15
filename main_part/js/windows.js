@@ -417,11 +417,7 @@ $(document).ready(function () {
 	$("#btnClose_readme_souvenir_6").click(function () {
 		$("#window_readme_souvenir_6").fadeOut(300);
 	})
-	// code windows
-	$("#souvenir_1_choice_1").click(function () {
-		// let answer_1 = $("#souvenir_1_choice_1 option:selected" ).val()
-	})
-
+	//code window
 	$("#code_souvenir_1").click(function () {
 		$("#window_code_souvenir_1").toggle(300);
 	});
@@ -459,12 +455,6 @@ $(document).ready(function () {
 		$("#window_code_souvenir_6").fadeOut(300);
 	})
 	// windows photo
-	$("#photo1_souvenir_1").click(function () {
-		$("#window_photo1_souvenir_1").toggle(300);
-	});
-	$("#btnClose_photo1_souvenir_1").click(function () {
-		$("#window_photo1_souvenir_1").fadeOut(300);
-	});
 	$("#photo1_souvenir_2").click(function () {
 		$("#window_photo1_souvenir_2").toggle(300);
 	});
