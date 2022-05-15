@@ -46,33 +46,40 @@
         .login-screen-password-input::placeholder {
             font-size: 14px;
         }
-
     </style>
-    <div class="lock-screen" style="z-index: 1; background-image: url('img/lock-bg.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center; height: 100vh; width: 100%;">
+    <div class="lock-screen"
+        style="z-index: 1; background-image: url('img/lock-bg.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center; height: 100vh; width: 100%;">
         <div class="lock-screen-cover" style="height: 100vh; width: 100%; background-color: rgba(0,0,0,0.2)"></div>
         <div class="lock-screen-content">
             <div class="lock-screen-left" style="position: fixed; bottom: 80px; left: 20px; color: white;">
                 <p style="font-size: 100px; margin-bottom: 10px;"><span id="lblTime"></span></p>
-                <p style="font-size: 48px;"><span id="lblDays"></span>, <span id="lblMonths"></span> <span id="lblDate"></span></p>
+                <p style="font-size: 48px;"><span id="lblDays"></span>, <span id="lblMonths"></span> <span
+                        id="lblDate"></span></p>
             </div>
             <div class="lock-screen-right" style="position: fixed; bottom: 24px; right: 0;">
                 <div class="lock-screen-wifi-btn"><img src="icon/wifi.ico"></div>
                 <div class="lock-screen-battery-btn"><img src="icon/battery.ico"></div>
             </div>
         </div>
-        <div class="login-screen" style="position: absolute; top: 0; left: 0; height: 100vh; width: 100%; text-align: center;">
+        <div class="login-screen"
+            style="position: absolute; top: 0; left: 0; height: 100vh; width: 100%; text-align: center;">
             <div style="display: table-cell; vertical-align: middle; width: 100vw; height: 100vh;">
-                <div class="login-form" style="color: #fff;"><img src="img/user_oggy.jpg" style="height: 140px; width: 140px; border-radius: 100%; margin-bottom: 20px;">
+                <div class="login-form" style="color: #fff;"><img src="img/user_oggy.jpg"
+                        style="height: 140px; width: 140px; border-radius: 100%; margin-bottom: 20px;">
                     <p style="font-size: 42px;">Nadem</p>
                     <div class="login-screen-password-input-wrap" style="margin-bottom: 80px; margin-top: 35px;">
-                        <input type="password" name="login-screen-password" placeholder="Password" class="login-screen-password-input" style="padding: 5px 8px; font-size: 18px; width:275px; border: 0; outline: 0;"></div>
+                        <input id="input_password" type="password" name="login-screen-password" placeholder="Password"
+                            class="login-screen-password-input"
+                            style="padding: 5px 8px; font-size: 18px; width:275px; border: 0; outline: 0;">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="http://code.jquery.com/color/jquery.color-2.1.2.min.js" integrity="sha256-H28SdxWrZ387Ldn0qogCzFiUDDxfPiNIyJX7BECQkDE=" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/color/jquery.color-2.1.2.min.js"
+        integrity="sha256-H28SdxWrZ387Ldn0qogCzFiUDDxfPiNIyJX7BECQkDE=" crossorigin="anonymous"></script>
     <script type="text/javascript">
         var date = new Date();
         var hours = date.getHours();
@@ -80,8 +87,8 @@
         time = hours + ":" + minutes;
         var lblTime = document.getElementById("lblTime");
         lblTime.innerHTML = time.toLocaleString('en-US');
-		var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-		var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
         document.getElementById("lblMonths").innerHTML = months[date.getMonth()];
         document.getElementById("lblDays").innerHTML = days[date.getMonth()];
         document.getElementById("lblDate").innerHTML = date.getDate();
@@ -90,7 +97,7 @@
         var password = "";
         $(".login-screen").hide();
 
-        $("body").on("click keypress", function() {
+        $("body").on("click keypress", function () {
             $(".lock-screen-left, .lock-screen-right").animate({
                 "bottom": "110vh"
             }, 200);
@@ -102,24 +109,25 @@
             $(".login-screen").delay(200).fadeIn();
         });
 
-        $('input').keyup(function() {
-            password = $(this).val();
-            console.log(password);
-            if (password != "") {
+        var input_password = document.getElementById("input_password");
+        input_password.addEventListener("keypress", function (event) {
+            if (event.key === "Enter") {
+                password = $(this).val();
+                console.log(password);
                 window.location.replace("index.html");
-            } else {}
+            }
         });
 
     </script>
     <script type="text/javascript">
         var idleTime = 0;
-        $(document).ready(function() {
+        $(document).ready(function () {
             var idleInterval = setInterval(timerIncrement, 1000);
 
-            $(this).mousemove(function(e) {
+            $(this).mousemove(function (e) {
                 idleTime = 0;
             });
-            $(this).keypress(function(e) {
+            $(this).keypress(function (e) {
                 idleTime = 0;
             });
         });
@@ -145,6 +153,7 @@
         }
 
     </script>
+    <script src="js/login.js" type="text/javascript"></script>
 </body>
 
 </html>
