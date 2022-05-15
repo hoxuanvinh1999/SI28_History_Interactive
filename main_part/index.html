@@ -941,7 +941,32 @@ For the Windows 10 CSS3 project
 					<div class="folders">
 						<a href="#" id="photo1_souvenir_5">
 							<i class="fa fa-file-image-o" aria-hidden="true"></i>
-							<span>img5.png</span>
+							<span>anonnce.png</span>
+							<!-- Hide untill user checked all-->
+						</a>
+						<a href="#" id="photo2_souvenir_5">
+							<i class="fa fa-file-image-o" aria-hidden="true"></i>
+							<span>fracture.png</span>
+							<!-- Hide untill user checked all-->
+						</a>
+						<a href="#" id="photo3_souvenir_5">
+							<i class="fa fa-file-image-o" aria-hidden="true"></i>
+							<span>lisence.png</span>
+							<!-- Hide untill user checked all-->
+						</a>
+						<a href="#" id="photo4_souvenir_5">
+							<i class="fa fa-file-image-o" aria-hidden="true"></i>
+							<span>lisence.png</span>
+							<!-- Hide untill user checked all-->
+						</a>
+						<a href="#" id="photo5_souvenir_5">
+							<i class="fa fa-file-image-o" aria-hidden="true"></i>
+							<span>copains.png</span>
+							<!-- Hide untill user checked all-->
+						</a>
+						<a href="#" id="mp31_souvenir_5">
+							<i class="fa fa-file-audio-o" aria-hidden="true"></i>
+							<span>interview.mp3</span>
 							<!-- Hide untill user checked all-->
 						</a>
 						<a href="#" id="readme_souvenir_5">
@@ -1272,12 +1297,14 @@ N’est ce pas trop de stress, de préparation...? Et de temps? Je n’avais pas
 					<a>Exit</a>
 				</div>
 				<textarea class="textBox" id="npTextarea_readme_souvenir_5">
-		This is readme souvenir 5
-		This is readme souvenir 5
-		This is readme souvenir 5
-		This is readme souvenir 5
-		This is readme souvenir 5
-		This is readme souvenir 5	
+	J’ai commencé le tennis avec mon père, quand j’étais jeune, très jeune… En fait aussi longtemps que je puisse me souvenir du temps passé avec mon père, j’ai toujours eu une raquette à la main.
+
+	Au collège j’ai commencé à en faire en club, j’avais un bon niveau, mon coach s'imaginait déjà sur le podium de Roland Gragos, le tournois de tennis régional de notre région ,l’Oise.
+					
+	Mais bon… Avec le temps, bien que je me sois donné les moyens financiers, ma motivation n’a fait que baisser avec le temps. Depuis mon adolescence, mon niveau n’a fait que baisser, ma pratique est devenue de plus en plus occasionnelle. Je me suis même blessé récemment à cause de mon manque de régularité… Fracture à la clavicule…
+	Je vais arrêter, ce sport me coûte trop cher comparé à l’investissement que j’y accorde…
+					
+	Et si… Et si ma motivation n’avait pas faibli avec le temps ?	
 	</textarea>
 			</div>
 		</div>
@@ -1599,8 +1626,8 @@ N’est ce pas trop de stress, de préparation...? Et de temps? Je n’avais pas
     				&emsp;for i in range(32-age): <br> 
         			&emsp;&emsp;motivation = 
 					<select id="souvenir_5_choice_1" name="choice_1">
-						<option>motivation</option>
 						<option>motivation*0.9</option>
+						<option>motivation</option>
 					</select>  
 					<br>
         			&emsp;&emsp;if motivation>40 and  budget==500 : <br>
@@ -1609,11 +1636,12 @@ N’est ce pas trop de stress, de préparation...? Et de temps? Je n’avais pas
             		&emsp;&emsp;&emsp;niveau = 
 					<select id="souvenir_5_choice_2" name="choice_2">
 						<option>niveau</option>
-						<option>=niveau - 1</option>
+						<option>niveau-1</option>
 					</select>   
 					<br> 
     				&emsp;return(niveau) <br>
-
+					<p>if __name__ == "__main__":</p>
+					<p>&emsp;FonctionNiveauTennis()</p>
 				</div>
 				<div class="windown_runcode">
 					<div class="vertical-center">
@@ -1835,14 +1863,86 @@ N’est ce pas trop de stress, de préparation...? Et de temps? Je n’avais pas
 			<div class="titleFrame">
 				<div class="titleContent">
 					<div class="iconContainer"><img class="icon" src="img/photo_icon.png" width="15" height="15"></div>
-					<div class="titleText">photo1.png</div>
+					<div class="titleText">anonnce.png</div>
 				</div>
 				<div class="closeBtn" id="btnClose_photo1_souvenir_5">&times;</div>
 			</div>
 			<div class="winbody" id="notepadBody_1">
 				<div id="content_photo1_souvenir_5">
+					<img class="fit-img" src="img/souvenir_2/Annonce_lecoincorrect.jpg">
+				</div>
+			</div>
+		</div>
+		<div class="window" id="window_photo2_souvenir_5">
+			<div class="titleFrame">
+				<div class="titleContent">
+					<div class="iconContainer"><img class="icon" src="img/photo_icon.png" width="15" height="15"></div>
+					<div class="titleText">fracture.png</div>
+				</div>
+				<div class="closeBtn" id="btnClose_photo2_souvenir_5">&times;</div>
+			</div>
+			<div class="winbody" id="notepadBody_1">
+				<div id="content_photo1_souvenir_5">
+					<img class="fit-img" src="img/souvenir_2/Fracture.jpg">
+				</div>
+			</div>
+		</div>
+		<div class="window" id="window_photo3_souvenir_5">
+			<div class="titleFrame">
+				<div class="titleContent">
+					<div class="iconContainer"><img class="icon" src="img/photo_icon.png" width="15" height="15"></div>
+					<div class="titleText">lisence.png</div>
+				</div>
+				<div class="closeBtn" id="btnClose_photo3_souvenir_5">&times;</div>
+			</div>
+			<div class="winbody" id="notepadBody_1">
+				<div id="content_photo1_souvenir_5">
+					<img class="fit-img" src="img/souvenir_2/License_pro.jpg">
+				</div>
+			</div>
+		</div>
+		<div class="window" id="window_photo4_souvenir_5">
+			<div class="titleFrame">
+				<div class="titleContent">
+					<div class="iconContainer"><img class="icon" src="img/photo_icon.png" width="15" height="15"></div>
+					<div class="titleText">lisence.png</div>
+				</div>
+				<div class="closeBtn" id="btnClose_photo4_souvenir_5">&times;</div>
+			</div>
+			<div class="winbody" id="notepadBody_1">
+				<div id="content_photo1_souvenir_5">
+					<img class="fit-img" src="img/souvenir_2/License_amateur.jpg">
+				</div>
+			</div>
+		</div>
+		<div class="window" id="window_photo5_souvenir_5">
+			<div class="titleFrame">
+				<div class="titleContent">
+					<div class="iconContainer"><img class="icon" src="img/photo_icon.png" width="15" height="15"></div>
+					<div class="titleText">copains.png</div>
+				</div>
+				<div class="closeBtn" id="btnClose_photo5_souvenir_5">&times;</div>
+			</div>
+			<div class="winbody" id="notepadBody_1">
+				<div id="content_photo1_souvenir_5">
 					<img class="fit-img" src="img/img_test.jpg">
 				</div>
+			</div>
+		</div>
+		<div class="window" id="window_mp31_souvenir_5">
+			<div class="titleFrame">
+				<div class="titleContent">
+					<div class="iconContainer"><img class="icon" src="img/mp3_icon.png" width="15" height="15"></div>
+					<div class="titleText">interview.mp3</div>
+				</div>
+				<div class="closeBtn" id="btnClose_mp31_souvenir_5">&times;</div>
+			</div>
+			<div class="winbody" id="notepadBody_1">
+				<audio controls>
+					<source src="img/souvenir_2/Interview.oog" type="audio/oog">
+					<source src="img/souvenir_2/Interview.mp3" type="audio/mpeg">
+				  Your browser does not support the audio element.
+				  </audio>
 			</div>
 		</div>
 		<div class="window" id="window_photo1_souvenir_6">
