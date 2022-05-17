@@ -107,8 +107,8 @@ $("#window_photo4_souvenir_5").hide()
 $("#window_photo5_souvenir_5").hide()
 $("#window_mp31_souvenir_5").hide()
 // at the beginning
-$("#photo1_souvenir_5").show()
-$("#photo2_souvenir_5").show()
+$("#photo1_souvenir_5").hide()
+$("#photo2_souvenir_5").hide()
 $("#photo3_souvenir_5").hide()
 $("#photo4_souvenir_5").hide()
 $("#photo5_souvenir_5").hide()
@@ -135,11 +135,11 @@ $("#btnRun_code_souvenir_5").click(function () {
         $("#mp31_souvenir_5").show()
     }
     else {
-        $("#photo1_souvenir_5").show()
-        $("#photo2_souvenir_5").show()
+        $("#photo1_souvenir_5").hide()
+        $("#photo2_souvenir_5").hide()
         $("#photo3_souvenir_5").hide()
-        $("#photo4_souvenir_5").hide()
-        $("#photo5_souvenir_5").hide()
+        $("#photo4_souvenir_5").show()
+        $("#photo5_souvenir_5").show()
         $("#mp31_souvenir_5").hide()
     }
 });
