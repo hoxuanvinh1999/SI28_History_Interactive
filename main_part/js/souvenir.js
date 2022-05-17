@@ -9,6 +9,8 @@ $("#window_photo6_souvenir_1").hide()
 $("#window_photo7_souvenir_1").hide()
 $("#window_photo8_souvenir_1").hide()
 // at the beginning, t=6
+$("#photo1_souvenir_1").hide()
+$("#photo2_souvenir_1").hide()
 $("#photo3_souvenir_1").hide()
 $("#photo4_souvenir_1").hide()
 $("#photo5_souvenir_1").hide()
