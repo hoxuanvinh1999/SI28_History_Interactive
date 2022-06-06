@@ -33,7 +33,6 @@ $("#window_code_souvenir_6").hide()
 //hide photo
 $("#window_photo1_souvenir_2").hide()
 $("#window_photo1_souvenir_3").hide()
-$("#window_photo1_souvenir_4").hide()
 $("#window_photo1_souvenir_6").hide()
 if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
 	console.log("Please access this page using a computer for the best experience.");
@@ -464,12 +463,6 @@ $(document).ready(function () {
 	});
 	$("#btnClose_photo1_souvenir_3").click(function () {
 		$("#window_photo1_souvenir_3").fadeOut(300);
-	})
-	$("#photo1_souvenir_4").click(function () {
-		$("#window_photo1_souvenir_4").toggle(300);
-	});
-	$("#btnClose_photo1_souvenir_4").click(function () {
-		$("#window_photo1_souvenir_4").fadeOut(300);
 	})
 	$("#photo1_souvenir_6").click(function () {
 		$("#window_photo1_souvenir_6").toggle(300);

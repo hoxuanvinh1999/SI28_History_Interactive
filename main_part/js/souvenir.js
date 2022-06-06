@@ -101,6 +101,133 @@ $("#btnClose_photo7_souvenir_1").click(function () {
 $("#btnClose_photo8_souvenir_1").click(function () {
     $("#window_photo8_souvenir_1").fadeOut(300);
 });
+
+
+
+//souvenir 4
+$("#window_photo1_souvenir_4").hide()
+$("#window_photo2_souvenir_4").hide()
+$("#window_photo3_souvenir_4").hide()
+$("#window_photo4_souvenir_4").hide()
+$("#window_photo5_souvenir_4").hide()
+$("#window_photo6_souvenir_4").hide()
+$("#window_photo7_souvenir_4").hide()
+//at the beginning
+$("#photo1_souvenir_4").hide()
+$("#photo2_souvenir_4").hide()
+$("#photo3_souvenir_4").hide()
+$("#photo4_souvenir_4").hide()
+$("#photo5_souvenir_4").hide()
+$("#photo6_souvenir_4").hide()
+$("#photo7_souvenir_4").hide()
+$("#btnRun_code_souvenir_4").click(function () {
+    var souvenir_4_choice_1 = document.getElementById("souvenir_4_choice_1");
+    var selectedValue1 = souvenir_4_choice_1.options[souvenir_4_choice_1.selectedIndex].value;
+    var souvenir_4_choice_2 = document.getElementById("souvenir_4_choice_2");
+    var selectedValue2 = souvenir_4_choice_2.options[souvenir_4_choice_2.selectedIndex].value;
+    if(selectedValue1 == "8"){
+        if(selectedValue2 == "False"){
+            $("#photo1_souvenir_4").show()
+            $("#photo2_souvenir_4").hide()
+            $("#photo3_souvenir_4").hide()
+            $("#photo4_souvenir_4").hide()
+            $("#photo5_souvenir_4").hide()
+            $("#photo6_souvenir_4").hide()
+            $("#photo7_souvenir_4").hide()
+        }else if(selectedValue2 == "True"){
+            $("#photo1_souvenir_4").hide()
+            $("#photo2_souvenir_4").show()
+            $("#photo3_souvenir_4").hide()
+            $("#photo4_souvenir_4").hide()
+            $("#photo5_souvenir_4").hide()
+            $("#photo6_souvenir_4").hide()
+            $("#photo7_souvenir_4").hide()
+        }
+    }
+    else if(selectedValue1 == "5"){
+        if(selectedValue2 == "False"){
+            $("#photo1_souvenir_4").hide()
+            $("#photo2_souvenir_4").hide()
+            $("#photo3_souvenir_4").show()
+            $("#photo4_souvenir_4").show()
+            $("#photo5_souvenir_4").hide()
+            $("#photo6_souvenir_4").hide()
+            $("#photo7_souvenir_4").hide()
+        }else{
+            $("#photo1_souvenir_4").hide()
+            $("#photo2_souvenir_4").show()
+            $("#photo3_souvenir_4").show()
+            $("#photo4_souvenir_4").show()
+            $("#photo5_souvenir_4").show()
+            $("#photo6_souvenir_4").hide()
+            $("#photo7_souvenir_4").hide()
+        }
+    }
+    else if(selectedValue1 == "2"){
+        if(selectedValue2 == "False"){
+            $("#photo1_souvenir_4").hide()
+            $("#photo2_souvenir_4").hide()
+            $("#photo3_souvenir_4").show()
+            $("#photo4_souvenir_4").show()
+            $("#photo5_souvenir_4").show()
+            $("#photo6_souvenir_4").show()
+            $("#photo7_souvenir_4").show()
+        }else{
+            $("#photo1_souvenir_4").hide()
+            $("#photo2_souvenir_4").show()
+            $("#photo3_souvenir_4").show()
+            $("#photo4_souvenir_4").show()
+            $("#photo5_souvenir_4").show()
+            $("#photo6_souvenir_4").show()
+            $("#photo7_souvenir_4").show()
+        }
+    }
+});
+$("#photo1_souvenir_4").click(function () {
+    $("#window_photo1_souvenir_4").toggle(300);
+});
+$("#btnClose_photo1_souvenir_4").click(function () {
+    $("#window_photo1_souvenir_4").fadeOut(300);
+})
+$("#photo2_souvenir_4").click(function () {
+    $("#window_photo2_souvenir_4").toggle(300);
+});
+$("#btnClose_photo2_souvenir_4").click(function () {
+    $("#window_photo2_souvenir_4").fadeOut(300);
+})
+$("#photo3_souvenir_4").click(function () {
+    $("#window_photo3_souvenir_4").toggle(300);
+});
+$("#btnClose_photo3_souvenir_4").click(function () {
+    $("#window_photo3_souvenir_4").fadeOut(300);
+})
+$("#photo4_souvenir_4").click(function () {
+    $("#window_photo4_souvenir_4").toggle(300);
+});
+$("#btnClose_photo4_souvenir_4").click(function () {
+    $("#window_photo4_souvenir_4").fadeOut(300);
+})
+$("#photo5_souvenir_4").click(function () {
+    $("#window_photo5_souvenir_4").toggle(300);
+});
+$("#btnClose_photo5_souvenir_4").click(function () {
+    $("#window_photo5_souvenir_4").fadeOut(300);
+})
+$("#photo6_souvenir_4").click(function () {
+    $("#window_photo6_souvenir_4").toggle(300);
+});
+$("#btnClose_photo6_souvenir_4").click(function () {
+    $("#window_photo6_souvenir_4").fadeOut(300);
+})
+$("#photo7_souvenir_4").click(function () {
+    $("#window_photo7_souvenir_4").toggle(300);
+});
+$("#btnClose_photo7_souvenir_4").click(function () {
+    $("#window_photo7_souvenir_4").fadeOut(300);
+})
+
+
+
 //souvenir 5
 $("#window_photo1_souvenir_5").hide()
 $("#window_photo2_souvenir_5").hide()
