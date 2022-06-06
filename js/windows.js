@@ -216,7 +216,7 @@ $(document).ready(function () {
 	});
 	// Show desktop button in taskbar (No Peek yet)
 	$("#showDesktop").click(function () {
-		$('div[class^="window"]').toggle();
+		$('div[class^="window"]').hide();
 	});
 
 	$("#folderIconFrame").click(function () {
