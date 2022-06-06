@@ -103,6 +103,108 @@ $("#btnClose_photo8_souvenir_1").click(function () {
 });
 
 
+//souvenir 2
+$("#window_photo1_souvenir_2").hide()
+$("#window_photo2_souvenir_2").hide()
+$("#window_photo3_souvenir_2").hide()
+$("#window_photo4_souvenir_2").hide()
+$("#window_photo5_souvenir_2").hide()
+$("#window_photo6_souvenir_2").hide()
+$("#window_photo7_souvenir_2").hide()
+$("#window_photo8_souvenir_2").hide()
+// at the beginning
+$("#photo1_souvenir_2").hide()
+$("#photo2_souvenir_2").hide()
+$("#photo3_souvenir_2").hide()
+$("#photo4_souvenir_2").hide()
+$("#photo5_souvenir_2").hide()
+$("#photo6_souvenir_2").hide()
+$("#photo7_souvenir_2").hide()
+$("#result_souvenir_2").hide()
+$("#result_souvenir_2").click(function () {
+    $("#window_result_souvenir_2").toggle(300);
+});
+$("#btnClose_result_souvenir_2").click(function () {
+    $("#window_result_souvenir_2").fadeOut(300);
+})
+$("#btnRun_code_souvenir_2").click(function () {
+    var souvenir_2_choice_1 = document.getElementById("souvenir_2_choice_1");
+    var selectedValue1 = souvenir_2_choice_1.options[souvenir_2_choice_1.selectedIndex].value;
+    if(selectedValue1 == "Alev()"){
+        $("#photo1_souvenir_2").show()
+        $("#photo2_souvenir_2").show()
+        $("#photo3_souvenir_2").hide()
+        $("#photo4_souvenir_2").hide()
+        $("#photo5_souvenir_2").hide()
+        $("#photo6_souvenir_2").hide()
+        $("#photo7_souvenir_2").hide()
+        $("#result_souvenir_2").show()
+        npTextarea_result_souvenir_2.innerHTML = "freedom = 25" + "\n" + "hapiness = 100";
+    }else if(selectedValue1 == "Sophie()"){
+        $("#photo1_souvenir_2").hide()
+        $("#photo2_souvenir_2").hide()
+        $("#photo3_souvenir_2").show()
+        $("#photo4_souvenir_2").show()
+        $("#photo5_souvenir_2").show()
+        $("#photo6_souvenir_2").hide()
+        $("#photo7_souvenir_2").hide()
+        $("#result_souvenir_2").show()
+        npTextarea_result_souvenir_2.innerHTML = "freedom = 25" + "\n" + "hapiness = 25";
+    }else{
+        $("#photo1_souvenir_2").hide()
+        $("#photo2_souvenir_2").hide()
+        $("#photo3_souvenir_2").hide()
+        $("#photo4_souvenir_2").hide()
+        $("#photo5_souvenir_2").hide()
+        $("#photo6_souvenir_2").show()
+        $("#photo7_souvenir_2").show()
+        $("#result_souvenir_2").show()
+        npTextarea_result_souvenir_2.innerHTML = "freedom = 100" + "\n" + "hapiness = 50";
+    }
+});
+$("#photo1_souvenir_2").click(function () {
+    $("#window_photo1_souvenir_2").toggle(300);
+});
+$("#btnClose_photo1_souvenir_2").click(function () {
+    $("#window_photo1_souvenir_2").fadeOut(300);
+})
+$("#photo2_souvenir_2").click(function () {
+    $("#window_photo2_souvenir_2").toggle(300);
+});
+$("#btnClose_photo2_souvenir_2").click(function () {
+    $("#window_photo2_souvenir_2").fadeOut(300);
+})
+$("#photo3_souvenir_2").click(function () {
+    $("#window_photo3_souvenir_2").toggle(300);
+});
+$("#btnClose_photo3_souvenir_2").click(function () {
+    $("#window_photo3_souvenir_2").fadeOut(300);
+})
+$("#photo4_souvenir_2").click(function () {
+    $("#window_photo4_souvenir_2").toggle(300);
+});
+$("#btnClose_photo4_souvenir_2").click(function () {
+    $("#window_photo4_souvenir_2").fadeOut(300);
+})
+$("#photo5_souvenir_2").click(function () {
+    $("#window_photo5_souvenir_2").toggle(300);
+});
+$("#btnClose_photo5_souvenir_2").click(function () {
+    $("#window_photo5_souvenir_2").fadeOut(300);
+})
+$("#photo6_souvenir_2").click(function () {
+    $("#window_photo6_souvenir_2").toggle(300);
+});
+$("#btnClose_photo6_souvenir_2").click(function () {
+    $("#window_photo6_souvenir_2").fadeOut(300);
+})
+$("#photo7_souvenir_2").click(function () {
+    $("#window_photo7_souvenir_2").toggle(300);
+});
+$("#btnClose_photo7_souvenir_2").click(function () {
+    $("#window_photo7_souvenir_2").fadeOut(300);
+})
+
 
 //souvenir 4
 $("#window_photo1_souvenir_4").hide()

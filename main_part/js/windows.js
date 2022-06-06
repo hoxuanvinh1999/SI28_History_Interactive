@@ -31,9 +31,10 @@ $("#window_code_souvenir_4").hide()
 $("#window_code_souvenir_5").hide()
 $("#window_code_souvenir_6").hide()
 //hide photo
-$("#window_photo1_souvenir_2").hide()
 $("#window_photo1_souvenir_3").hide()
 $("#window_photo1_souvenir_6").hide()
+//result
+$("#window_result_souvenir_2").hide()
 if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
 	console.log("Please access this page using a computer for the best experience.");
 	// Hides these windows so it doesn't crowd the viewport
@@ -452,12 +453,6 @@ $(document).ready(function () {
 		$("#window_code_souvenir_6").fadeOut(300);
 	})
 	// windows photo
-	$("#photo1_souvenir_2").click(function () {
-		$("#window_photo1_souvenir_2").toggle(300);
-	});
-	$("#btnClose_photo1_souvenir_2").click(function () {
-		$("#window_photo1_souvenir_2").fadeOut(300);
-	})
 	$("#photo1_souvenir_3").click(function () {
 		$("#window_photo1_souvenir_3").toggle(300);
 	});
