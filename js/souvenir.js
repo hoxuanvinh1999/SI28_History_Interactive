@@ -139,7 +139,7 @@ $("#btnRun_code_souvenir_2").click(function () {
         $("#photo6_souvenir_2").hide()
         $("#photo7_souvenir_2").hide()
         $("#result_souvenir_2").show()
-        npTextarea_result_souvenir_2.innerHTML = "freedom = 25" + "\n" + "hapiness = 100";
+        npTextarea_result_souvenir_2.innerHTML = "freedom = 25" + "\n" + "happiness = 100";
     }else if(selectedValue1 == "Sophie()"){
         $("#photo1_souvenir_2").hide()
         $("#photo2_souvenir_2").hide()
@@ -149,7 +149,7 @@ $("#btnRun_code_souvenir_2").click(function () {
         $("#photo6_souvenir_2").hide()
         $("#photo7_souvenir_2").hide()
         $("#result_souvenir_2").show()
-        npTextarea_result_souvenir_2.innerHTML = "freedom = 25" + "\n" + "hapiness = 25";
+        npTextarea_result_souvenir_2.innerHTML = "freedom = 25" + "\n" + "happiness = 25";
     }else{
         $("#photo1_souvenir_2").hide()
         $("#photo2_souvenir_2").hide()
@@ -232,6 +232,7 @@ $("#window_photo12_souvenir_3").hide();
 $("#window_photo13_souvenir_3").hide();
 
 $("#photo1_souvenir_3").hide();
+$("#photo1_souvenir_3_2").hide()
 $("#photo2_souvenir_3").hide();
 $("#photo3_souvenir_3").hide();
 $("#photo4_souvenir_3").hide();

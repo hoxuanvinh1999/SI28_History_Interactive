@@ -27,20 +27,22 @@ $("#window_readme_souvenir_6").hide()
 $("#window_code_souvenir_1").hide()
 $("#window_code_souvenir_2").hide()
 $("#window_code_souvenir_3").hide()
+$("#window_code_souvenir_3_2").hide()
 $("#window_code_souvenir_4").hide()
 $("#window_code_souvenir_5").hide()
 $("#window_code_souvenir_6").hide()
 //hide photo
-$("#window_photo1_souvenir_3").hide()
 $("#window_photo1_souvenir_6").hide()
-// MODIFICATION-----------------------------------------------------
-$("#photo1_souvenir_3").hide()
-$("#photo1_souvenir_3_2").hide()
-$("#window_photo2_souvenir_3").hide()
+
+//in case
+//$("#photo1_souvenir_3").hide()
+//$("#photo1_souvenir_3_2").hide()
+//$("#window_photo2_souvenir_3").hide()
 //$("#code_souvenir_3").hide()
 // $("#raison_false").hide();
 // $("#raison_true").hide();
-$("#window_code_souvenir_3_2").hide()
+//$("#window_code_souvenir_3_2").hide()
+
 //result
 $("#window_result_souvenir_2").hide()
 if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
