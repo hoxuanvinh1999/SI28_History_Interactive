@@ -463,26 +463,4 @@ $(document).ready(function () {
 			video_tag.pause();
 		}
 	};
-	var video_souvenir_6 = document.getElementById("video_souvenir_6");
-	var audio = new Audio("img/Infinite_Horizons.mp3");
-	var open_video = 0
-	$("#photo1_souvenir_6").click(function () {
-		if(open_video == 0){
-			open_video = 1
-			audio.pause();
-			$("#window_photo1_souvenir_6").toggle(300);
-		}
-		else{
-			//videoStopper("video_souvenir_6");
-			video_souvenir_6.pause();
-			location.href = "index.html";
-		}
-	});
-	$("#btnClose_photo1_souvenir_6").click(function () {
-		$("#window_photo1_souvenir_6").fadeOut(300);
-		audio.pause();
-		//videoStopper("video_souvenir_6");
-		video_souvenir_6.pause();
-		location.href = "index.html";
-	})
 });
