@@ -237,27 +237,6 @@ $(document).ready(function () {
 		check_open_folder6();
 		$("#folderwindow").toggle(300);
 	});
-	var play_music = 0;
-	var count = 0
-	var audio = new Audio("img/Infinite_Horizons.mp3");
-	audio.onended = function() {
-		if(count != 1){
-		  this.play();
-	   }
-	};
-	const div_musicIconFrame = document.getElementById('musicIconFrame');
-	$("#musicIconFrame").click(function () {
-		if(play_music == 0){
-			play_music = 1
-			div_musicIconFrame.innerHTML = `<i class="fa fa-pause" aria-hidden="true"></i>`;
-			audio.play();
-		}
-		else{
-			play_music = 0
-			div_musicIconFrame.innerHTML = `<i class="fa fa-play" aria-hidden="true"></i>`;
-			audio.pause();
-		}
-	});
 	$("#npClose_1").click(function () {
 		$("#folderexplorer").fadeOut(300);
 	});
@@ -470,12 +449,6 @@ $(document).ready(function () {
 	});
 	$("#btnClose_code_souvenir_5").click(function () {
 		$("#window_code_souvenir_5").fadeOut(300);
-	})
-	$("#code_souvenir_6").click(function () {
-		$("#window_code_souvenir_6").toggle(300);
-	});
-	$("#btnClose_code_souvenir_6").click(function () {
-		$("#window_code_souvenir_6").fadeOut(300);
 	})
 	// windows photo
 	let videoStopper = function(id) {

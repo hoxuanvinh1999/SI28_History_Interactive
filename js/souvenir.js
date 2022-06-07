@@ -786,3 +786,49 @@ $("#btnClose_mp31_souvenir_5").click(function () {
     control_mp31_souvenir_5.pause();
     $("#window_mp31_souvenir_5").fadeOut(300);
 });
+
+//souvenir 6
+var pokemon = new Audio("img/souvenir_6/Departure From the Hoenn Region.mp3");
+var play_pokemon = 0
+$("#btnRun_code_souvenir_6").click(function () {
+    if (play_pokemon == 0){
+        play_pokemon = 1;
+        play_music = 0;
+        div_musicIconFrame.innerHTML = `<i class="fa fa-play" aria-hidden="true"></i>`;
+        audio.pause();
+        pokemon.play();
+    }
+    else{
+        play_pokemon = 0;
+        pokemon.pause();
+    }
+});
+$("#code_souvenir_6").click(function () {
+    $("#window_code_souvenir_6").toggle(300);
+});
+$("#btnClose_code_souvenir_6").click(function () {
+    play_pokemon = 0;
+    pokemon.pause();
+    $("#window_code_souvenir_6").fadeOut(300);
+});
+var play_music = 0;
+var count = 0
+var audio = new Audio("img/Infinite_Horizons.mp3");
+audio.onended = function() {
+    if(count != 1){
+      this.play();
+   }
+};
+const div_musicIconFrame = document.getElementById('musicIconFrame');
+$("#musicIconFrame").click(function () {
+    if(play_music == 0){
+        play_music = 1
+        div_musicIconFrame.innerHTML = `<i class="fa fa-pause" aria-hidden="true"></i>`;
+        audio.play();
+    }
+    else{
+        play_music = 0
+        div_musicIconFrame.innerHTML = `<i class="fa fa-play" aria-hidden="true"></i>`;
+        audio.pause();
+    }
+});
