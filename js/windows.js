@@ -223,6 +223,27 @@ $(document).ready(function () {
 		check_open_folder6();
 		$("#folderwindow").toggle(300);
 	});
+	var play_music = 0;
+	var count = 0
+	var audio = new Audio("img/Infinite_Horizons.mp3");
+	audio.onended = function() {
+		if(count != 1){
+		  this.play();
+	   }
+	};
+	const div_musicIconFrame = document.getElementById('musicIconFrame');
+	$("#musicIconFrame").click(function () {
+		if(play_music == 0){
+			play_music = 1
+			div_musicIconFrame.innerHTML = `<i class="fa fa-pause" aria-hidden="true"></i>`;
+			audio.play();
+		}
+		else{
+			play_music = 0
+			div_musicIconFrame.innerHTML = `<i class="fa fa-play" aria-hidden="true"></i>`;
+			audio.pause();
+		}
+	});
 	$("#npClose_1").click(function () {
 		$("#folderexplorer").fadeOut(300);
 	});
