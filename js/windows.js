@@ -33,6 +33,14 @@ $("#window_code_souvenir_6").hide()
 //hide photo
 $("#window_photo1_souvenir_3").hide()
 $("#window_photo1_souvenir_6").hide()
+// MODIFICATION-----------------------------------------------------
+$("#photo1_souvenir_3").hide()
+$("#photo1_souvenir_3_2").hide()
+$("#window_photo2_souvenir_3").hide()
+//$("#code_souvenir_3").hide()
+// $("#raison_false").hide();
+// $("#raison_true").hide();
+$("#window_code_souvenir_3_2").hide()
 //result
 $("#window_result_souvenir_2").hide()
 if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
@@ -412,12 +420,7 @@ $(document).ready(function () {
 	$("#btnClose_readme_souvenir_2").click(function () {
 		$("#window_readme_souvenir_2").fadeOut(300);
 	})
-	$("#readme_souvenir_3").click(function () {
-		$("#window_readme_souvenir_3").toggle(300);
-	});
-	$("#btnClose_readme_souvenir_3").click(function () {
-		$("#window_readme_souvenir_3").fadeOut(300);
-	})
+
 	$("#readme_souvenir_4").click(function () {
 		$("#window_readme_souvenir_4").toggle(300);
 	});
@@ -449,12 +452,7 @@ $(document).ready(function () {
 	$("#btnClose_code_souvenir_2").click(function () {
 		$("#window_code_souvenir_2").fadeOut(300);
 	})
-	$("#code_souvenir_3").click(function () {
-		$("#window_code_souvenir_3").toggle(300);
-	});
-	$("#btnClose_code_souvenir_3").click(function () {
-		$("#window_code_souvenir_3").fadeOut(300);
-	})
+
 	$("#code_souvenir_4").click(function () {
 		$("#window_code_souvenir_4").toggle(300);
 	});
@@ -474,12 +472,6 @@ $(document).ready(function () {
 		$("#window_code_souvenir_6").fadeOut(300);
 	})
 	// windows photo
-	$("#photo1_souvenir_3").click(function () {
-		$("#window_photo1_souvenir_3").toggle(300);
-	});
-	$("#btnClose_photo1_souvenir_3").click(function () {
-		$("#window_photo1_souvenir_3").fadeOut(300);
-	})
 	$("#photo1_souvenir_6").click(function () {
 		$("#window_photo1_souvenir_6").toggle(300);
 	});

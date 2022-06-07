@@ -756,6 +756,17 @@ div.taskbar {
 	overflow: hidden;
 }
 
+#window_readme_souvenir_3_2 {
+	position: absolute;
+	top: 75px;
+	left: 75px;
+	min-width: 320px;
+	min-height: 200px;
+	width: 640px;
+	height: 480px;
+	overflow: hidden;
+}
+
 #window_readme_souvenir_4 {
 	position: absolute;
 	top: 75px;
@@ -823,6 +834,17 @@ div.taskbar {
 	overflow: hidden;
 }
 
+#window_code_souvenir_3_2 {
+	position: absolute;
+	top: 75px;
+	left: 75px;
+	min-width: 320px;
+	min-height: 200px;
+	width: 640px;
+	height: 480px;
+	overflow: hidden;
+}
+
 #window_code_souvenir_4 {
 	position: absolute;
 	top: 75px;
@@ -866,6 +888,17 @@ div.taskbar {
 	margin: auto;
 	max-width: 80%;
 	max-height: 90%
+}
+
+.fit-img10 {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	max-width: 95%;
+	max-height: 95%
 }
 
 .fit-img-bottom {
@@ -1055,6 +1088,131 @@ div.taskbar {
 }
 
 #window_photo1_souvenir_3 {
+	position: absolute;
+	top: 50px;
+	bottom: 50px;
+	left: 75px;
+	min-width: 320px;
+	min-height: 200px;
+	width: 45%;
+	height: 80%;
+	overflow: hidden;
+}
+#window_photo2_souvenir_3 {
+	position: absolute;
+	top: 75px;
+	left: 75px;
+	min-width: 320px;
+	min-height: 200px;
+	width: 640px;
+	height: 480px;
+	overflow: hidden;
+}
+
+#window_photo3_souvenir_3 {
+	position: absolute;
+	top: 75px;
+	left: 75px;
+	min-width: 320px;
+	min-height: 200px;
+	width: 640px;
+	height: 480px;
+	overflow: hidden;
+}
+
+#window_photo4_souvenir_3 {
+	position: absolute;
+	top: 75px;
+	left: 75px;
+	min-width: 320px;
+	min-height: 200px;
+	width: 45%;
+	height: 80%;
+	overflow: hidden;
+}
+#window_photo5_souvenir_3 {
+	position: absolute;
+	top: 75px;
+	left: 75px;
+	min-width: 320px;
+	min-height: 200px;
+	width: 640px;
+	height: 480px;
+	overflow: hidden;
+}
+
+#window_photo6_souvenir_3 {
+	position: absolute;
+	top: 75px;
+	left: 75px;
+	min-width: 320px;
+	min-height: 200px;
+	width: 640px;
+	height: 480px;
+	overflow: hidden;
+}
+#window_photo7_souvenir_3 {
+	position: absolute;
+	top: 75px;
+	left: 75px;
+	min-width: 320px;
+	min-height: 200px;
+	width: 640px;
+	height: 480px;
+	overflow: hidden;
+}
+#window_photo8_souvenir_3 {
+	position: absolute;
+	top: 75px;
+	left: 75px;
+	min-width: 320px;
+	min-height: 200px;
+	width: 45%;
+	height: 85%;
+	overflow: hidden;
+}
+#window_photo9_souvenir_3 {
+	position: absolute;
+	top: 75px;
+	left: 75px;
+	min-width: 320px;
+	min-height: 200px;
+	width: 640px;
+	height: 480px;
+	overflow: hidden;
+}
+#window_photo10_souvenir_3 {
+	position: absolute;
+	top: 75px;
+	left: 75px;
+	min-width: 320px;
+	min-height: 200px;
+	width: 93%;
+	height: 48%;
+	overflow: hidden;
+}
+#window_photo11_souvenir_3 {
+	position: absolute;
+	top: 75px;
+	left: 75px;
+	min-width: 320px;
+	min-height: 200px;
+	width: 93%;
+	height: 48%;
+	overflow: hidden;
+}
+#window_photo12_souvenir_3 {
+	position: absolute;
+	top: 75px;
+	left: 75px;
+	min-width: 320px;
+	min-height: 200px;
+	width: 93%;
+	height: 48%;
+	overflow: hidden;
+}
+
+#window_photo13_souvenir_3 {
 	position: absolute;
 	top: 75px;
 	left: 75px;
