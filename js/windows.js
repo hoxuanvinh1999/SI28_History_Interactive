@@ -500,6 +500,7 @@ $(document).ready(function () {
 		}
 		else{
 			//videoStopper("video_souvenir_6");
+			video_souvenir_6.pause();
 			location.href = "index.html";
 		}
 	});
@@ -507,6 +508,7 @@ $(document).ready(function () {
 		$("#window_photo1_souvenir_6").fadeOut(300);
 		audio.pause();
 		//videoStopper("video_souvenir_6");
+		video_souvenir_6.pause();
 		location.href = "index.html";
 	})
 });
