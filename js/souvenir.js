@@ -214,6 +214,7 @@ $("#window_photo4_souvenir_4").hide()
 $("#window_photo5_souvenir_4").hide()
 $("#window_photo6_souvenir_4").hide()
 $("#window_photo7_souvenir_4").hide()
+$("#window_photo8_souvenir_4").hide()
 //at the beginning
 $("#photo1_souvenir_4").hide()
 $("#photo2_souvenir_4").hide()
@@ -222,6 +223,7 @@ $("#photo4_souvenir_4").hide()
 $("#photo5_souvenir_4").hide()
 $("#photo6_souvenir_4").hide()
 $("#photo7_souvenir_4").hide()
+$("#photo8_souvenir_4").hide()
 $("#btnRun_code_souvenir_4").click(function () {
     var souvenir_4_choice_1 = document.getElementById("souvenir_4_choice_1");
     var selectedValue1 = souvenir_4_choice_1.options[souvenir_4_choice_1.selectedIndex].value;
@@ -326,6 +328,12 @@ $("#photo7_souvenir_4").click(function () {
 });
 $("#btnClose_photo7_souvenir_4").click(function () {
     $("#window_photo7_souvenir_4").fadeOut(300);
+})
+$("#photo8_souvenir_4").click(function () {
+    $("#window_photo8_souvenir_4").toggle(300);
+});
+$("#btnClose_photo8_souvenir_4").click(function () {
+    $("#window_photo8_souvenir_4").fadeOut(300);
 })
 
 
