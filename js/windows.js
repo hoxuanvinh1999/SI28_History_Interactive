@@ -229,6 +229,7 @@ $(document).ready(function () {
 	// Show desktop button in taskbar (No Peek yet)
 	$("#showDesktop").click(function () {
 		//$('div[class^="window"]').hide();
+		$("#window_readme_souvenir_6").toggle(300);
 	});
 
 	$("#folderIconFrame").click(function () {
