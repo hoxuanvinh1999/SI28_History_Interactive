@@ -6,7 +6,7 @@
 // If not, checks that screen is wide enough
 
 //At the beginning these windows is closed
-videoStopper("video_souvenir_6");
+//videoStopper("video_souvenir_6");
 $("#window_souvenir_1").hide()
 $("#window_souvenir_2").hide()
 $("#window_souvenir_3").hide()
@@ -499,14 +499,14 @@ $(document).ready(function () {
 			$("#window_photo1_souvenir_6").toggle(300);
 		}
 		else{
-			videoStopper("video_souvenir_6");
+			//videoStopper("video_souvenir_6");
 			location.href = "index.html";
 		}
 	});
 	$("#btnClose_photo1_souvenir_6").click(function () {
 		$("#window_photo1_souvenir_6").fadeOut(300);
 		audio.pause();
-		videoStopper("video_souvenir_6");
+		//videoStopper("video_souvenir_6");
 		location.href = "index.html";
 	})
 });
