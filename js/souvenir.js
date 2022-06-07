@@ -390,6 +390,8 @@ $("#photo5_souvenir_5").click(function () {
     $("#window_photo5_souvenir_5").toggle(300);
 });
 $("#mp31_souvenir_5").click(function () {
+    const control_mp31_souvenir_5 = document.getElementById("control_mp31_souvenir_5"); 
+    control_mp31_souvenir_5.pause();
     $("#window_mp31_souvenir_5").toggle(300);
 });
 $("#btnClose_photo1_souvenir_5").click(function () {
@@ -408,5 +410,7 @@ $("#btnClose_photo5_souvenir_5").click(function () {
     $("#window_photo5_souvenir_5").fadeOut(300);
 });
 $("#btnClose_mp31_souvenir_5").click(function () {
+    const control_mp31_souvenir_5 = document.getElementById("control_mp31_souvenir_5"); 
+    control_mp31_souvenir_5.pause();
     $("#window_mp31_souvenir_5").fadeOut(300);
 });
