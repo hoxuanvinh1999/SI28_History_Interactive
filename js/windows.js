@@ -23,6 +23,7 @@ $("#window_readme_souvenir_3").hide()
 $("#window_readme_souvenir_4").hide()
 $("#window_readme_souvenir_5").hide()
 $("#window_readme_souvenir_6").hide()
+$("#readme_souvenir_6").hide()
 //hide code
 $("#window_code_souvenir_1").hide()
 $("#window_code_souvenir_2").hide()
@@ -31,6 +32,7 @@ $("#window_code_souvenir_3_2").hide()
 $("#window_code_souvenir_4").hide()
 $("#window_code_souvenir_5").hide()
 $("#window_code_souvenir_6").hide()
+$("#code_souvenir_6").hide()
 //hide photo
 $("#window_photo1_souvenir_6").hide()
 
@@ -474,10 +476,35 @@ $(document).ready(function () {
 		$("#window_code_souvenir_6").fadeOut(300);
 	})
 	// windows photo
+	let videoStopper = function(id) {
+		let containerElement = document.getElementById(id);
+		let iframe_tag = containerElement.querySelector( 'iframe');
+		let video_tag = containerElement.querySelector( 'video' );
+		if ( iframe_tag) {
+			let iframeSrc = iframe_tag.src;
+			iframe_tag.src = iframeSrc; 
+		}
+		if ( video_tag) {
+			video_tag.pause();
+		}
+	};
+	var video_souvenir_6 = document.getElementById("video_souvenir_6");
+	var open_video = 0
 	$("#photo1_souvenir_6").click(function () {
-		$("#window_photo1_souvenir_6").toggle(300);
+		if(open_video == 0){
+			open_video = 1
+			audio.pause();
+			$("#window_photo1_souvenir_6").toggle(300);
+		}
+		else{
+			videoStopper("video_souvenir_6");
+			location.href = "index.html";
+		}
 	});
 	$("#btnClose_photo1_souvenir_6").click(function () {
 		$("#window_photo1_souvenir_6").fadeOut(300);
+		audio.pause();
+		videoStopper("video_souvenir_6");
+		location.href = "index.html";
 	})
 });
