@@ -464,6 +464,7 @@ $(document).ready(function () {
 		}
 	};
 	var video_souvenir_6 = document.getElementById("video_souvenir_6");
+	var audio = new Audio("img/Infinite_Horizons.mp3");
 	var open_video = 0
 	$("#photo1_souvenir_6").click(function () {
 		if(open_video == 0){
