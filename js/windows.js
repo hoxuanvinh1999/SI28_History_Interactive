@@ -204,9 +204,6 @@ $(document).ready(function () {
 	});
 	// Task View (not implemented yet)
 	// Taskbar icon
-	$("#taskviewIconFrame").click(function () {
-		alert("Not supported yet");
-	});
 	// Start Menu
 	// Taskbar icon
 	$("#startIconFrame").click(function () {
