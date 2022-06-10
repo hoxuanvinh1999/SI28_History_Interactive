@@ -16,7 +16,8 @@ $("#window_souvenir_6").hide()
 $("#souvenir_6").hide()
 var check_opened_folder = [0, 0, 0, 0, 0]
 $("#folderexplorer").hide()
-$("#notepad").hide()
+$('#folderwindow').hide()
+//$("#notepad").hide()
 //hide readme
 $("#window_readme_souvenir_1").hide()
 $("#window_readme_souvenir_2").hide()
@@ -233,6 +234,8 @@ $(document).ready(function () {
 	$("#folderIconFrame").click(function () {
 		check_open_folder6();
 		$("#folderwindow").toggle(300);
+		$('div[class^="window"]').css('z-index', '0');
+		$("#folderwindow").css('z-index', '10');
 	});
 	$("#npClose_1").click(function () {
 		$("#folderexplorer").fadeOut(300);
