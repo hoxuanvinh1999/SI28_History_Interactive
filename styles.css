@@ -159,6 +159,7 @@ textarea {
 
 #winver {
 	position: absolute;
+	z-index: 1;
 	top: 25px;
 	left: 25px;
 }
@@ -166,7 +167,7 @@ textarea {
 #notepad {
 	position: absolute;
 	top: 75px;
-	left: 75px;
+	left: 275px;
 	min-width: 320px;
 	min-height: 200px;
 	width: 640px;
@@ -624,6 +625,7 @@ div.taskbar {
 
 #folderwindow {
 	position: absolute;
+	z-index: 1;
 	top: 75px;
 	left: 75px;
 	min-width: 320px;
@@ -715,7 +717,7 @@ div.taskbar {
 #window_readme_souvenir_1 {
 	position: absolute;
 	top: 75px;
-	left: 75px;
+	left: 175px;
 	min-width: 320px;
 	min-height: 200px;
 	width: 640px;
@@ -726,7 +728,7 @@ div.taskbar {
 #window_readme_souvenir_2 {
 	position: absolute;
 	top: 75px;
-	left: 75px;
+	left: 175px;
 	min-width: 320px;
 	min-height: 200px;
 	width: 640px;
@@ -737,7 +739,7 @@ div.taskbar {
 #window_result_souvenir_2 {
 	position: absolute;
 	top: 75px;
-	left: 75px;
+	left: 95px;
 	min-width: 320px;
 	min-height: 200px;
 	width: 640px;
@@ -748,7 +750,7 @@ div.taskbar {
 #window_readme_souvenir_3 {
 	position: absolute;
 	top: 75px;
-	left: 75px;
+	left: 175px;
 	min-width: 320px;
 	min-height: 200px;
 	width: 640px;
@@ -759,7 +761,7 @@ div.taskbar {
 #window_readme_souvenir_3_2 {
 	position: absolute;
 	top: 75px;
-	left: 75px;
+	left: 175px;
 	min-width: 320px;
 	min-height: 200px;
 	width: 640px;
@@ -770,7 +772,7 @@ div.taskbar {
 #window_readme_souvenir_4 {
 	position: absolute;
 	top: 75px;
-	left: 75px;
+	left: 175px;
 	min-width: 320px;
 	min-height: 200px;
 	width: 640px;
@@ -781,7 +783,7 @@ div.taskbar {
 #window_readme_souvenir_5 {
 	position: absolute;
 	top: 75px;
-	left: 75px;
+	left: 175px;
 	min-width: 320px;
 	min-height: 200px;
 	width: 640px;
@@ -792,7 +794,7 @@ div.taskbar {
 #window_readme_souvenir_6 {
 	position: absolute;
 	top: 75px;
-	left: 75px;
+	left: 175px;
 	min-width: 320px;
 	min-height: 200px;
 	width: 640px;
@@ -804,7 +806,7 @@ div.taskbar {
 #window_code_souvenir_1 {
 	position: absolute;
 	top: 75px;
-	left: 75px;
+	left: 155px;
 	min-width: 320px;
 	min-height: 200px;
 	width: 640px;
@@ -815,7 +817,7 @@ div.taskbar {
 #window_code_souvenir_2 {
 	position: absolute;
 	top: 75px;
-	left: 75px;
+	left: 155px;
 	min-width: 320px;
 	min-height: 200px;
 	width: 640px;
@@ -826,7 +828,7 @@ div.taskbar {
 #window_code_souvenir_3 {
 	position: absolute;
 	top: 75px;
-	left: 75px;
+	left: 155px;
 	min-width: 320px;
 	min-height: 200px;
 	width: 640px;
@@ -837,7 +839,7 @@ div.taskbar {
 #window_code_souvenir_3_2 {
 	position: absolute;
 	top: 75px;
-	left: 75px;
+	left: 155px;
 	min-width: 320px;
 	min-height: 200px;
 	width: 640px;
@@ -848,7 +850,7 @@ div.taskbar {
 #window_code_souvenir_4 {
 	position: absolute;
 	top: 75px;
-	left: 75px;
+	left: 155px;
 	min-width: 320px;
 	min-height: 200px;
 	width: 640px;
@@ -859,7 +861,7 @@ div.taskbar {
 #window_code_souvenir_5 {
 	position: absolute;
 	top: 75px;
-	left: 75px;
+	left: 155px;
 	min-width: 320px;
 	min-height: 200px;
 	width: 640px;
@@ -870,7 +872,7 @@ div.taskbar {
 #window_code_souvenir_6 {
 	position: absolute;
 	top: 75px;
-	left: 75px;
+	left: 155px;
 	min-width: 320px;
 	min-height: 200px;
 	width: 640px;
@@ -914,7 +916,7 @@ div.taskbar {
 #window_photo1_souvenir_1 {
 	position: absolute;
 	top: 75px;
-	left: 75px;
+	left: 100px;
 	min-width: 320px;
 	min-height: 200px;
 	width: 640px;
@@ -925,7 +927,7 @@ div.taskbar {
 #window_photo2_souvenir_1 {
 	position: absolute;
 	top: 75px;
-	left: 75px;
+	left: 100px;
 	min-width: 320px;
 	min-height: 200px;
 	width: 640px;
@@ -936,7 +938,7 @@ div.taskbar {
 #window_photo3_souvenir_1 {
 	position: absolute;
 	top: 75px;
-	left: 75px;
+	left: 100px;
 	min-width: 320px;
 	min-height: 200px;
 	width: 640px;
@@ -947,7 +949,7 @@ div.taskbar {
 #window_photo4_souvenir_1 {
 	position: absolute;
 	top: 75px;
-	left: 75px;
+	left: 100px;
 	min-width: 320px;
 	min-height: 200px;
 	width: 640px;
@@ -958,7 +960,7 @@ div.taskbar {
 #window_photo5_souvenir_1 {
 	position: absolute;
 	top: 75px;
-	left: 75px;
+	left: 100px;
 	min-width: 320px;
 	min-height: 200px;
 	width: 640px;
@@ -969,7 +971,7 @@ div.taskbar {
 #window_photo6_souvenir_1 {
 	position: absolute;
 	top: 75px;
-	left: 75px;
+	left: 100px;
 	min-width: 320px;
 	min-height: 200px;
 	width: 640px;
@@ -980,7 +982,7 @@ div.taskbar {
 #window_photo7_souvenir_1 {
 	position: absolute;
 	top: 75px;
-	left: 75px;
+	left: 100px;
 	min-width: 320px;
 	min-height: 200px;
 	width: 640px;
@@ -991,7 +993,7 @@ div.taskbar {
 #window_photo8_souvenir_1 {
 	position: absolute;
 	top: 75px;
-	left: 75px;
+	left: 100px;
 	min-width: 320px;
 	min-height: 200px;
 	width: 640px;
@@ -1002,7 +1004,7 @@ div.taskbar {
 #window_photo1_souvenir_2 {
 	position: absolute;
 	top: 75px;
-	left: 75px;
+	left: 100px;
 	min-width: 320px;
 	min-height: 200px;
 	width: 640px;
@@ -1013,7 +1015,7 @@ div.taskbar {
 #window_photo2_souvenir_2 {
 	position: absolute;
 	top: 75px;
-	left: 75px;
+	left: 100px;
 	min-width: 320px;
 	min-height: 200px;
 	width: 640px;
@@ -1024,7 +1026,7 @@ div.taskbar {
 #window_photo3_souvenir_2 {
 	position: absolute;
 	top: 75px;
-	left: 75px;
+	left: 100px;
 	min-width: 320px;
 	min-height: 200px;
 	width: 640px;
@@ -1035,7 +1037,7 @@ div.taskbar {
 #window_photo4_souvenir_2 {
 	position: absolute;
 	top: 75px;
-	left: 75px;
+	left: 100px;
 	min-width: 320px;
 	min-height: 200px;
 	width: 640px;
@@ -1046,7 +1048,7 @@ div.taskbar {
 #window_photo5_souvenir_2 {
 	position: absolute;
 	top: 75px;
-	left: 75px;
+	left: 100px;
 	min-width: 320px;
 	min-height: 200px;
 	width: 640px;
@@ -1057,7 +1059,7 @@ div.taskbar {
 #window_photo6_souvenir_2 {
 	position: absolute;
 	top: 75px;
-	left: 75px;
+	left: 100px;
 	min-width: 320px;
 	min-height: 200px;
 	width: 640px;
@@ -1068,7 +1070,7 @@ div.taskbar {
 #window_photo7_souvenir_2 {
 	position: absolute;
 	top: 75px;
-	left: 75px;
+	left: 100px;
 	min-width: 320px;
 	min-height: 200px;
 	width: 640px;
@@ -1079,7 +1081,7 @@ div.taskbar {
 #window_photo8_souvenir_2 {
 	position: absolute;
 	top: 75px;
-	left: 75px;
+	left: 100px;
 	min-width: 320px;
 	min-height: 200px;
 	width: 640px;
@@ -1091,7 +1093,7 @@ div.taskbar {
 	position: absolute;
 	top: 50px;
 	bottom: 50px;
-	left: 75px;
+	left: 100px;
 	min-width: 320px;
 	min-height: 200px;
 	width: 45%;
@@ -1101,7 +1103,7 @@ div.taskbar {
 #window_photo2_souvenir_3 {
 	position: absolute;
 	top: 75px;
-	left: 75px;
+	left: 100px;
 	min-width: 320px;
 	min-height: 200px;
 	width: 640px;
@@ -1112,7 +1114,7 @@ div.taskbar {
 #window_photo3_souvenir_3 {
 	position: absolute;
 	top: 75px;
-	left: 75px;
+	left: 100px;
 	min-width: 320px;
 	min-height: 200px;
 	width: 640px;
@@ -1123,7 +1125,7 @@ div.taskbar {
 #window_photo4_souvenir_3 {
 	position: absolute;
 	top: 75px;
-	left: 75px;
+	left: 100px;
 	min-width: 320px;
 	min-height: 200px;
 	width: 45%;
@@ -1133,7 +1135,7 @@ div.taskbar {
 #window_photo5_souvenir_3 {
 	position: absolute;
 	top: 75px;
-	left: 75px;
+	left: 100px;
 	min-width: 320px;
 	min-height: 200px;
 	width: 640px;
@@ -1144,7 +1146,7 @@ div.taskbar {
 #window_photo6_souvenir_3 {
 	position: absolute;
 	top: 75px;
-	left: 75px;
+	left: 100px;
 	min-width: 320px;
 	min-height: 200px;
 	width: 640px;
@@ -1154,7 +1156,7 @@ div.taskbar {
 #window_photo7_souvenir_3 {
 	position: absolute;
 	top: 75px;
-	left: 75px;
+	left: 100px;
 	min-width: 320px;
 	min-height: 200px;
 	width: 640px;
@@ -1164,7 +1166,7 @@ div.taskbar {
 #window_photo8_souvenir_3 {
 	position: absolute;
 	top: 75px;
-	left: 75px;
+	left: 100px;
 	min-width: 320px;
 	min-height: 200px;
 	width: 45%;
@@ -1174,7 +1176,7 @@ div.taskbar {
 #window_photo9_souvenir_3 {
 	position: absolute;
 	top: 75px;
-	left: 75px;
+	left: 100px;
 	min-width: 320px;
 	min-height: 200px;
 	width: 640px;
@@ -1184,7 +1186,7 @@ div.taskbar {
 #window_photo10_souvenir_3 {
 	position: absolute;
 	top: 75px;
-	left: 75px;
+	left: 100px;
 	min-width: 320px;
 	min-height: 200px;
 	width: 93%;
@@ -1194,7 +1196,7 @@ div.taskbar {
 #window_photo11_souvenir_3 {
 	position: absolute;
 	top: 75px;
-	left: 75px;
+	left: 100px;
 	min-width: 320px;
 	min-height: 200px;
 	width: 93%;
@@ -1204,7 +1206,7 @@ div.taskbar {
 #window_photo12_souvenir_3 {
 	position: absolute;
 	top: 75px;
-	left: 75px;
+	left: 100px;
 	min-width: 320px;
 	min-height: 200px;
 	width: 93%;
@@ -1215,7 +1217,7 @@ div.taskbar {
 #window_photo13_souvenir_3 {
 	position: absolute;
 	top: 75px;
-	left: 75px;
+	left: 100px;
 	min-width: 320px;
 	min-height: 200px;
 	width: 640px;
@@ -1226,7 +1228,7 @@ div.taskbar {
 #window_photo1_souvenir_4 {
 	position: absolute;
 	top: 75px;
-	left: 75px;
+	left: 100px;
 	min-width: 320px;
 	min-height: 200px;
 	width: 640px;
@@ -1237,7 +1239,7 @@ div.taskbar {
 #window_photo2_souvenir_4 {
 	position: absolute;
 	top: 75px;
-	left: 75px;
+	left: 100px;
 	min-width: 320px;
 	min-height: 200px;
 	width: 640px;
@@ -1248,7 +1250,7 @@ div.taskbar {
 #window_photo3_souvenir_4 {
 	position: absolute;
 	top: 75px;
-	left: 75px;
+	left: 100px;
 	min-width: 320px;
 	min-height: 200px;
 	width: 640px;
@@ -1259,7 +1261,7 @@ div.taskbar {
 #window_photo4_souvenir_4 {
 	position: absolute;
 	top: 75px;
-	left: 75px;
+	left: 100px;
 	min-width: 320px;
 	min-height: 200px;
 	width: 640px;
@@ -1270,7 +1272,7 @@ div.taskbar {
 #window_photo5_souvenir_4 {
 	position: absolute;
 	top: 75px;
-	left: 75px;
+	left: 100px;
 	min-width: 320px;
 	min-height: 200px;
 	width: 640px;
@@ -1281,7 +1283,7 @@ div.taskbar {
 #window_photo6_souvenir_4 {
 	position: absolute;
 	top: 75px;
-	left: 75px;
+	left: 100px;
 	min-width: 320px;
 	min-height: 200px;
 	width: 640px;
@@ -1292,7 +1294,7 @@ div.taskbar {
 #window_photo7_souvenir_4 {
 	position: absolute;
 	top: 75px;
-	left: 75px;
+	left: 100px;
 	min-width: 320px;
 	min-height: 200px;
 	width: 640px;
@@ -1303,7 +1305,7 @@ div.taskbar {
 #window_photo8_souvenir_4 {
 	position: absolute;
 	top: 75px;
-	left: 75px;
+	left: 100px;
 	min-width: 320px;
 	min-height: 200px;
 	width: 640px;
@@ -1314,7 +1316,7 @@ div.taskbar {
 #window_photo1_souvenir_5 {
 	position: absolute;
 	top: 75px;
-	left: 75px;
+	left: 100px;
 	min-width: 320px;
 	min-height: 200px;
 	width: 640px;
@@ -1325,7 +1327,7 @@ div.taskbar {
 #window_photo2_souvenir_5 {
 	position: absolute;
 	top: 75px;
-	left: 75px;
+	left: 100px;
 	min-width: 320px;
 	min-height: 200px;
 	width: 640px;
@@ -1336,7 +1338,7 @@ div.taskbar {
 #window_photo3_souvenir_5 {
 	position: absolute;
 	top: 75px;
-	left: 75px;
+	left: 100px;
 	min-width: 320px;
 	min-height: 200px;
 	width: 640px;
@@ -1347,7 +1349,7 @@ div.taskbar {
 #window_photo4_souvenir_5 {
 	position: absolute;
 	top: 75px;
-	left: 75px;
+	left: 100px;
 	min-width: 320px;
 	min-height: 200px;
 	width: 640px;
@@ -1358,7 +1360,7 @@ div.taskbar {
 #window_photo5_souvenir_5 {
 	position: absolute;
 	top: 75px;
-	left: 75px;
+	left: 100px;
 	min-width: 320px;
 	min-height: 200px;
 	width: 640px;
@@ -1369,7 +1371,7 @@ div.taskbar {
 #window_mp31_souvenir_5 {
 	position: absolute;
 	top: 75px;
-	left: 75px;
+	left: 100px;
 	min-width: 320px;
 	min-height: 80px;
 	width: 320px;
@@ -1380,7 +1382,7 @@ div.taskbar {
 #window_photo1_souvenir_6 {
 	position: absolute;
 	top: 75px;
-	left: 75px;
+	left: 100px;
 	min-width: 320px;
 	min-height: 200px;
 	width: 640px;
