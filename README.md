@@ -1,6 +1,14 @@
 # SI28_History_Interactive
 
-## Status: Creating
+## Status: Finished
+
+## Member:
+
+  -ROSE Alice
+	-MONTEILS Anaïs
+	-BASILE Antoine
+	-HỒ Xuân Vinh
+	-HAMAÏLI Elisa
 
 ## Description
   A small interactive game where the player transforms into a programmer and tries to rewrite his life.
