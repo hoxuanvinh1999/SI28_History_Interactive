@@ -1209,8 +1209,8 @@ div.taskbar {
 	left: 100px;
 	min-width: 320px;
 	min-height: 200px;
-	width: 93%;
-	height: 48%;
+	width: 50%;
+	height: 60%;
 	overflow: hidden;
 }
 

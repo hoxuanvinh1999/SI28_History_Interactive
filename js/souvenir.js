@@ -159,7 +159,7 @@ $("#btnRun_code_souvenir_2").click(function () {
         $("#photo6_souvenir_2").show()
         $("#photo7_souvenir_2").show()
         $("#result_souvenir_2").show()
-        npTextarea_result_souvenir_2.innerHTML = "freedom = 100" + "\n" + "hapiness = 50";
+        npTextarea_result_souvenir_2.innerHTML = "freedom = 100" + "\n" + "happiness = 50";
     }
 });
 $("#photo1_souvenir_2").click(function () {
